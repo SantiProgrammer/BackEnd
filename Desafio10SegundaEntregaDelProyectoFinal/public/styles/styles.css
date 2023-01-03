@@ -1,0 +1,31 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(31, 32, 35);
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+
+
+}
+
+a,
+a:visited {
+    color: #e5f876;
+    text-decoration: none;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:hover {
+    transform: scale(1.1);
+}

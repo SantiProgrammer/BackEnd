@@ -1,0 +1,20 @@
+[
+   {
+      "id": 1,
+      "nombre": "Adidas shoes",
+      "precio": 1100,
+      "thumbnail": "../public/adidas-shoes.jpg"
+   },
+   {
+      "id": 2,
+      "nombre": "Nike ball",
+      "precio": 600,
+      "thumbnail": "../public/nike-ball.jpg"
+   },
+   {
+      "id": 3,
+      "nombre": "Nike shoes",
+      "precio": 1200,
+      "thumbnail": "../public/nike-shoes.jpg"
+   }
+]

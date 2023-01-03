@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body>
+  <%- include('../partials/navbar'); %>
+    <h1>Listado de productos</h1>
+    <div class="products-container">
+      <% if(products?.length> 0){ %>
+        <% products.forEach((item)=>{ %>
+          <div class="products-card">
+            <img class="product-img" src="<%=item.thumbnail %>" />
+            <p>ID: <%=item.id%>
+            </p>
+            <p>Producto: <%=item.nombre%>
+            </p>
+            <p>Precio: $ <%=item.precio%>
+            </p>
+          </div>
+          <% }) %>
+            <% } else { %>
+              no hay productos!!!
+              <% } %>
+    </div>
+    <a class="my-button" href="./form">Ir a Formulario</a>
+    <%- include('../partials/footer'); %>
+</body>
+
+</html>

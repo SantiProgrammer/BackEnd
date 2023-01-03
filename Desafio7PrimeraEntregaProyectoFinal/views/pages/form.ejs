@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+    <title>Formulario</title>
+</head>
+
+<body>
+  <%- include('../partials/navbar'); %>
+    <h1>Postea un producto</h1>
+    <form method="POST" action="/">
+      <input id="title" name="nombre" placeholder="Nombre del producto" required="true" />
+      <input type="number" id="price" name="precio" placeholder="Precio del producto" required="true" />
+      <input id="thumbnail" name="thumbnail" placeholder="URL de la imagen" required="true" />
+      <button class="my-button" type="submit">Postear</button>
+
+    </form>
+    <a class="my-button" href="./">ir a Productos</a>
+
+    <%- include('../partials/footer'); %>
+</body>
+
+</html>

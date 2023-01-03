@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../public/styles.css">
+  <title>formulario</title>
+</head>
+
+<body>
+
+
+  <h1 class="title">Postea un producto</h1>
+  <form action="/api/productos" method="POST" class="form" enctype="multipart/form-data">
+
+    <input type="text" name="title" placeholder="Nombre del producto" class='input' required="required" />
+    <input type="number" name="price" placeholder="Precio del producto" class='input' required="required" />
+    <input type="text" name="thumbnail" placeholder="Url de imagen (Opcional)" class='input' autocomplete='off' />
+    <p>Sube una imagen:</p>
+    <input type="file" name="myFile" />
+    <button type="submit" class='my-button'>Postear</button>
+    <!--     <a class='my-button' href="">Ir a Productos</a> -->
+  </form>
+  <a class="my-button" href="/">Inicio</a>
+
+</body>
+
+</html>
