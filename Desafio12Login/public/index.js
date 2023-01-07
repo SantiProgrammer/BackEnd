@@ -81,6 +81,15 @@ socket.on("msg-list", (data) => {
 
 });
 
+// Funcion para LogIn 
+function enviarLog() {
+    const usuario = document.getElementById("usuario").value;
+    const contraseña = document.getElementById("contraseña").value;
+    console.log('se intento logear');
+    socket.emit("userData", { usuario, contraseña });
+    return false;
+}
+
 
 // Funcion para enviar productos el backend
 
@@ -92,8 +101,29 @@ function postProducto() {
     return false;
 }
 
-socket.on("product-list", (data) => {
-    console.log("product-list:" + data);
+// productos FS
+
+socket.on("products-list", (data) => {
+    console.log("products-list:" + data);
+    let html = '';
+    data.forEach(item => {
+        html +=
+            `
+        <div class="products-card">
+            <img src="${item.thumbnail}" class="product-img"/>
+            <p>Producto: ${item.nombre}</p>
+            <p>Precio: $ ${item.precio}</p>
+        </div>
+        `
+    })
+    document.getElementById("products-list").innerHTML = html;
+
+});
+
+// Faker productos / productos-test
+
+socket.on("productos-test", (data) => {
+    console.log("productos-test:" + data);
     let html = '';
     data.forEach(item => {
         html +=
@@ -105,7 +135,7 @@ socket.on("product-list", (data) => {
         </div>
         `
     })
-    document.getElementById("productsContainer").innerHTML = html;
+    document.getElementById("productos-test").innerHTML = html;
 
 });
 
@@ -117,6 +147,8 @@ document.getElementById("myAnchor").addEventListener("click", function (event) {
 
 
 });
+
+
 
 
 
