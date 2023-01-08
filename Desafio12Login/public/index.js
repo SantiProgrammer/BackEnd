@@ -1,12 +1,6 @@
-
-
 const socket = io();
 
-
-
-
 /* Desnormalizacion */
-
 const authorSchema = new normalizr.schema.Entity('authors', {}, { idAttribute: 'email' })
 const messageSchema = new normalizr.schema.Entity('messages', {
     author: authorSchema
@@ -19,7 +13,6 @@ const chatSchema = new normalizr.schema.Entity("chats", {
 
 
 // Envia mensajes al backend
-
 function enviarMsg() {
     const emailId = document.getElementById("email-id").value;
     const nombre = document.getElementById("nombre").value;
@@ -41,13 +34,13 @@ function enviarMsg() {
         text: chatInput,
     }
     console.log(userData);
-    socket.emit("msg", userData);
     chatInput.value = "";
+    socket.emit("msg", userData);
+
     return false;
 }
 
 // Recibe mensajes del back y los renderiza en el DOM
-
 socket.on("msg-list", (data) => {
 
     const dataMsg = normalizr.denormalize(data.result, chatSchema, data.entities)
@@ -141,11 +134,12 @@ socket.on("productos-test", (data) => {
 
 
 
-document.querySelector("preventDefault").addEventListener("click", function (event) {
+document.getElementById("preventDefault").addEventListener("click", function (event) {
     event.preventDefault()
+});
 
-
-
+document.getElementById("preventDefault-chat").addEventListener("click", function (event) {
+    event.preventDefault()
 });
 
 
