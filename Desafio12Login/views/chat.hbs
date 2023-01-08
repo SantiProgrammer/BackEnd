@@ -1,7 +1,7 @@
     <h1>Chat WebSocket</h1>
     <div class="chat-container">
         <h5 id="h5"></h5>
-        <form id="myAnchor" onsubmit="return enviarMsg()">
+        <form id="preventDefault" onsubmit="return enviarMsg()">
             {{!-- input mensajes ID --}}
             <input type="email" id="email-id" placeholder="Email Id" required="true">
             <div class="main-user-data" >
@@ -14,7 +14,7 @@
 
             </div>
             <div class="main-user-data">
-                         {{!-- Alias --}}
+            {{!-- Alias --}}
             <input type="text" id="alias" placeholder="Alias(Tu nombre en el chat)" >
           
             {{!-- Avatar --}}

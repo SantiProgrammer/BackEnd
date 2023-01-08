@@ -77,11 +77,6 @@ app.get('/chat', async (req, res) => {
   res.render('chat');
 });
 
-// form
-app.get('/form', async (req, res) => {
-  res.render('form');
-});
-
 
 
 /* Normalizacion */
@@ -129,11 +124,13 @@ io.on("connection", async (socket) => {
   // Recibe prodcuto del cliente
   socket.on("product", async (data) => {
 
+    // Muestra el mensaje por consola
+    console.log('Se recibio un producto nuevo', "producto:", data);
+
     // Guarda el producto nuevo en productos.json
     await contenedorProductos.save(data);
 
-    // Muestra el mensaje por consola
-    console.log('Se recibio un producto nuevo', "producto:", data);
+
 
     // Devuelve el historial completo de mensajes al cliente con el nuevo mensaje
     io.emit("product-list", await productosFS);
@@ -220,6 +217,12 @@ app.get("/logout", (req, res) => {
 app.get("/informacionconfidencial", auth, (req, res) => {
   res.render("private", { layout: 'logged' })
 });
+
+// form
+app.get('/form', auth, (req, res) => {
+  res.render('form', { layout: 'logged' });
+});
+
 
 
 

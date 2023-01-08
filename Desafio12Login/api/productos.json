@@ -16,5 +16,11 @@
       "nombre": "Nike shoes",
       "precio": 1200,
       "thumbnail": "../public/img/nike-shoes.jpg"
+   },
+   {
+      "nombre": "Santiago",
+      "precio": "1000",
+      "thumbnail": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/905e7edc0cfc46d7b504aa4300cca484_9366/Tenis_adidas_Grand_Court_Base_Blanco_EE7901_01_standard.jpg",
+      "id": 4
    }
 ]

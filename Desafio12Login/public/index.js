@@ -141,14 +141,11 @@ socket.on("productos-test", (data) => {
 
 
 
-document.getElementById("myAnchor").addEventListener("click", function (event) {
+document.querySelector("preventDefault").addEventListener("click", function (event) {
     event.preventDefault()
 
 
 
 });
-
-
-
 
 
