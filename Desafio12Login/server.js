@@ -176,7 +176,7 @@ app.use(
 
 );
 
-const userInfo = []
+
 
 /* Login post */
 app.post('/login', async (req, res) => {
@@ -186,13 +186,11 @@ app.post('/login', async (req, res) => {
     console.log('Login fail!');
     return res.render("loginfail");
   }
-  if (userInfo.length === 0) {
-    userInfo.push(body.username)
-  }
+
   req.session.user = body.username;
   req.session.admin = true;
   console.log('Login success, user:' + body.username);
-  res.render('logged', { layout: 'logged', username: userInfo })
+  res.render('logged', { layout: 'logged', username: req.session.user })
 
 });
 
@@ -212,6 +210,10 @@ app.get("/showsession", (req, res) => {
 
 /* Logout */
 app.get("/logout", (req, res) => {
+  const userInfo = []
+  if (userInfo.length === 0) {
+    userInfo.push(req.session.user)
+  }
   req.session.destroy((err) => {
     if (err) {
       res.send("no pudo deslogear");
@@ -222,7 +224,7 @@ app.get("/logout", (req, res) => {
 });
 
 app.get("/informacionconfidencial", auth, (req, res) => {
-  res.render("private", { layout: 'logged', username: userInfo, admin: req.session.admin })
+  res.render("private", { layout: 'logged', username: req.session.user, admin: req.session.admin })
 });
 
 // form
