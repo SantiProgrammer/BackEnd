@@ -24,5 +24,18 @@
       "text": "Hola",
       "timestamp": "10:19 pm",
       "id": 2
+   },
+   {
+      "author": {
+         "email": "santi@gmail.com",
+         "nombre": "Santiago",
+         "apellido": "Morera",
+         "edad": "31",
+         "alias": "DonPedrito",
+         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
+      },
+      "text": "Mensaje de pedrito",
+      "timestamp": "4:43 pm",
+      "id": 3
    }
 ]

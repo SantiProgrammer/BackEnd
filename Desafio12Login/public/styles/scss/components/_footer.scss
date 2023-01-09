@@ -11,8 +11,10 @@ footer {
     align-items: center;
 }
 
-.footer {
-    color: rgb(255, 255, 255);
+.footer a,
+a:visited {
+    color: rgb(170, 170, 170);
     animation: fadeIn 1.5s;
     font-size: 12px;
+    text-decoration: none;
 }

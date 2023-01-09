@@ -176,18 +176,23 @@ app.use(
 
 );
 
+const userInfo = []
+
 /* Login post */
 app.post('/login', async (req, res) => {
-  const { body, username } = req;
+  const { body } = req;
 
   if (body.username !== "santi" || body.password !== "santipass") {
     console.log('Login fail!');
     return res.render("loginfail");
   }
+  if (userInfo.length === 0) {
+    userInfo.push(body.username)
+  }
   req.session.user = body.username;
   req.session.admin = true;
   console.log('Login success, user:' + body.username);
-  res.render('logged', { layout: 'logged' })
+  res.render('logged', { layout: 'logged', username: userInfo })
 
 });
 
@@ -200,7 +205,9 @@ app.get("/login", (req, res) => {
 
 /* Showsession */
 app.get("/showsession", (req, res) => {
-  res.json(req.session);
+  const mySession = JSON.stringify(req.session, null, 4)
+
+  res.render('session', { layout: 'logged', session: mySession })
 });
 
 /* Logout */
@@ -209,13 +216,13 @@ app.get("/logout", (req, res) => {
     if (err) {
       res.send("no pudo deslogear");
     } else {
-      res.render('logout');
+      res.render('logout', { username: userInfo });
     }
   });
 });
 
 app.get("/informacionconfidencial", auth, (req, res) => {
-  res.render("private", { layout: 'logged' })
+  res.render("private", { layout: 'logged', username: userInfo, admin: req.session.admin })
 });
 
 // form
