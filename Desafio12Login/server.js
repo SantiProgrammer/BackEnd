@@ -165,15 +165,13 @@ app.use(
         useUnifiedTopology: true,
       },
     }),
-    cookie: { maxAge: 60000 * 10 },
-
+    cookie: { maxAge: 60 * 1000 },
+    rolling: true,
     secret: 'secret',
     resave: false,
     saveUninitialized: false
 
   })
-
-
 );
 
 
@@ -189,6 +187,7 @@ app.post('/login', async (req, res) => {
 
   req.session.user = body.username;
   req.session.admin = true;
+
   console.log('Login success, user:' + body.username);
   res.render('logged', { layout: 'logged', username: req.session.user })
 
@@ -204,8 +203,9 @@ app.get("/login", (req, res) => {
 /* Showsession */
 app.get("/showsession", (req, res) => {
   const mySession = JSON.stringify(req.session, null, 4)
-
-  res.render('session', { layout: 'logged', session: mySession })
+  req.session.touch()
+  res.json(req.session)
+  /* res.render('session', { layout: 'logged', session: mySession }) */
 });
 
 /* Logout */

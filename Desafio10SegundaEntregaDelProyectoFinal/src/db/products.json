@@ -1,20 +1,38 @@
 [
-   {
-      "id": 1,
-      "nombre": "Nike balls",
-      "precio": 8000,
-      "thumbnail": "../public/img/nike-shoes.jpg"
-   },
-   {
-      "id": 2,
-      "nombre": "Nike ball",
-      "precio": 600,
-      "thumbnail": "../public/img/nike-ball.jpg"
-   },
-   {
-      "id": 3,
-      "nombre": "Nike shoes",
-      "precio": 1200,
-      "thumbnail": "../public/img/nike-shoes.jpg"
-   }
+  {
+    "id": 1,
+    "nombre": "Nike ballsedfdfd",
+    "precio": 8000,
+    "thumbnail": "../public/img/nike-shoes.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Nike ball",
+    "precio": 600,
+    "thumbnail": "../public/img/nike-ball.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Nike shoes",
+    "precio": 1200,
+    "thumbnail": "../public/img/nike-shoes.jpg"
+  },
+  {
+    "timestamp": "14/1/2023, 19:34:11",
+    "nombre": "",
+    "description": "...",
+    "thumbnail": "../public/img/nike-shoes.jpg",
+    "precio": "",
+    "stock": 50,
+    "id": 4
+  },
+  {
+    "timestamp": "14/1/2023, 19:35:05",
+    "nombre": "Nike balls",
+    "description": "...",
+    "thumbnail": "../public/img/nike-shoes.jpg",
+    "precio": "",
+    "stock": 50,
+    "id": 5
+  }
 ]
