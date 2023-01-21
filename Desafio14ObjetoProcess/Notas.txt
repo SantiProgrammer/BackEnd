@@ -1,0 +1,9 @@
+Para probar las distintas bases se debe modificar el archivo .env entre las opciones:
+
+INSTANCIA=archivo
+INSTANCIA=memoria
+INSTANCIA=mongo
+INSTANCIA=firebase
+
+
+sass --watch public/styles/scss/styles.scss public/styles/css/styles.css

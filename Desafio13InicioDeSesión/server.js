@@ -15,8 +15,6 @@ const { engine } = require('express-handlebars');
 
 const PORT = 8081;
 
-const Toastify = require('toastify-js');
-const Swal = require('sweetalert2')
 
 const redis = require("redis");
 const client = redis.createClient({
@@ -79,6 +77,8 @@ passport.use(
     (req, username, password, done) => {
       Usuarios.findOne({ username: username }, function (err, user) {
         if (err) {
+
+          res.render('usuario-registrado');
           console.log("❌ Error in SignUp: " + err);
           return done(err);
         }

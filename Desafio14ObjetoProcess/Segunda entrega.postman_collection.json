@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "f429be84-1345-4be7-ae62-ff0298aaace6",
+		"name": "Segunda entrega",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24071023"
+	},
+	"item": [
+		{
+			"name": "GET ALL PRODUCT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID PRODUCT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productos/AGgTgLxbEz49IjwZMCGh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"AGgTgLxbEz49IjwZMCGh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Budín de limon\", \r\n\"descripcion\": \"Alimento de la cocina inglesa\", \r\n\"codigo\": 3223, \r\n\"foto\": \"https://www.cucinare.tv/wp-content/uploads/2020/01/Dise%C3%B1o-sin-t%C3%ADtulo-32.png\", \r\n\"precio\": 580, \r\n\"stock\": 15}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PRODUCT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nombre\": \"Budín de limon\", \r\n\"descripcion\": \"Alimento de la cocina inglesa\", \r\n\"codigo\": 1111, \r\n\"foto\": \"https://www.cucinare.tv/wp-content/uploads/2020/01/Dise%C3%B1o-sin-t%C3%ADtulo-32.png\", \r\n\"precio\": 580, \r\n\"stock\": 11}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos/AGgTgLxbEz49IjwZMCGh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"AGgTgLxbEz49IjwZMCGh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PRODUCT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productos/QiLqIwTGrJOBmb2tDIWH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"QiLqIwTGrJOBmb2tDIWH"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CARTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PRODUCTS BY ID CART",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/H84yVEm3M1zGVR0oZUEp/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"H84yVEm3M1zGVR0oZUEp",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CART",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PRODUCT TO CART",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/H84yVEm3M1zGVR0oZUEp/productos/QEjbE1dVcQuFoFuP7n59",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"H84yVEm3M1zGVR0oZUEp",
+						"productos",
+						"QEjbE1dVcQuFoFuP7n59"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CART",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/VjzHL84kVOTVmDYPpOGL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"VjzHL84kVOTVmDYPpOGL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PRODUCT FROM CART",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/TRubXXvmQbT3Zpk3u2nV/productos/QEjbE1dVcQuFoFuP7n59",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"TRubXXvmQbT3Zpk3u2nV",
+						"productos",
+						"QEjbE1dVcQuFoFuP7n59"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
