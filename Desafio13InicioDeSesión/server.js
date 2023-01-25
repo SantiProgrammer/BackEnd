@@ -10,11 +10,9 @@ const bcrypt = require("bcrypt");
 const routes = require("./routes");
 
 const mongoose = require("mongoose");
-/* const MongoStore = require("connect-mongo"); posible borrar*/
 const { engine } = require('express-handlebars');
 
 const PORT = 8081;
-
 
 const redis = require("redis");
 const client = redis.createClient({
@@ -217,11 +215,6 @@ app.get('/chat', async (req, res) => {
 
 
 app.get("*", routes.failRoute);
-
-
-
-
-
 
 
 
