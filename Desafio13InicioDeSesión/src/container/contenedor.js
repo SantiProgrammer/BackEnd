@@ -3,7 +3,7 @@ const fs = require('fs');
 
 class Contenedor {
     constructor(filename) {
-        this.filePath = `./api/${filename}.json`;
+        this.filePath = `./src/api/${filename}.json`;
     }
 
     getAll = async () => {

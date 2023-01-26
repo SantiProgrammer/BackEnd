@@ -7,12 +7,14 @@ const LocalStrategy = require("passport-local").Strategy;
 const Usuarios = require("./models/usuarios");
 
 const bcrypt = require("bcrypt");
-const routes = require("./routes");
+const routes = require("./routes/routes");
+
+const routesChat = require("./routes/routesChat")
 
 const mongoose = require("mongoose");
 const { engine } = require('express-handlebars');
 
-const PORT = 8081;
+const PORT = 8080;
 
 const redis = require("redis");
 const client = redis.createClient({
@@ -133,7 +135,7 @@ app.use(
 
 app.use('/public', express.static(__dirname + '/public'));
 app.set('view engine', 'hbs');
-app.set('views', './views');
+app.set('views', './src/views');
 app.engine(
   'hbs',
   engine({
@@ -168,6 +170,10 @@ app.post(
 app.get("/failsignup", routes.getFailsignup);
 app.get("/logout", routes.getLogout);
 
+
+// renderiza el chat
+app.get('/chat', routesChat.GetChat);
+
 function checkAuthentication(req, res, next) {
   if (req.isAuthenticated()) {
     next();
@@ -193,8 +199,8 @@ app.get("/form", checkAuthentication, (req, res) => {
 app.get("/showsession", (req, res) => {
   const mySession = JSON.stringify(req.session, null, 4)
   req.session.touch()
-  res.json(req.session)
-  /* res.render('session', { layout: 'logged', session: mySession }) */
+  /*   res.json(req.session) */
+  res.render('session', { layout: 'logged', session: mySession })
 });
 
 app.get('/form', checkAuthentication, (req, res) => {

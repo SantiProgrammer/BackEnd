@@ -3,7 +3,7 @@ const fs = require('fs');
 
 class ContenedorMsg {
     constructor(fileName) {
-        this.filePath = './api/mensajes.json';
+        this.filePath = './src/api/mensajes.json';
     }
 
     getAll = async () => {
