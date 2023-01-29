@@ -1,0 +1,15 @@
+1. Instala pm2 de manera global con npm i pm2
+
+2. Ejecuta en la ruta del server:
+
+Modo 8/cpus cluster:
+pm2 start server.js --name="Server1 8081" --watch -i max -- 8081
+
+Modo fork:
+pm2 start server.js --name="Server2 8082" --watch -- 8082
+
+3. pm2 list
+
+4. Probar las rutas localhost:8081 y localhost:8082
+
+4. pm2 stop all && pm2 kill all

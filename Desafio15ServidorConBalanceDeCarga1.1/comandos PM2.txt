@@ -1,3 +1,0 @@
-Ejecuta en la ruta del server:
-pm2 start server.js --name="Server1 8081" --watch -i max -- 8081
-pm2 start server.js --name="Server2 8082" --watch -- 8082
