@@ -221,9 +221,3 @@ io.on("connection", async (socket) => {
     io.sockets.emit("msg-list", await normalizarMensajes());
   });
 });
-
-
-
-
-
-

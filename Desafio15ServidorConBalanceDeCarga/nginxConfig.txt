@@ -24,7 +24,7 @@ http {
     server {
         listen 80;
         server_name nginx_node;
-        root "Users\santi\OneDrive\Escritorio\Coder House\Backend\Desafios\Desafio15ServidorConBalanceDeCarga1.1\src";
+        root ./Users/santi/OneDrive/Escritorio/Coder House/Backend/Desafios/Desafio15ServidorConBalanceDeCarga1.1/src;
 
         location /datos/ {
             proxy_pass http://node_app;
