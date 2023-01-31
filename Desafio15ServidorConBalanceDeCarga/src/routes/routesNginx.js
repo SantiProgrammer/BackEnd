@@ -1,5 +1,5 @@
-const getNginx = (req, res) => res.render('nginx', { layout: 'index' })
-const getApiRandoms = (req, res) => res.render('ApiRandoms');
+const getNginx = (req, res) => res.render('nginx', { layout: 'nginx' })
+const getApiRandoms = (req, res) => res.render('ApiRandoms', { layout: 'nginx' });
 
 
 module.exports = {

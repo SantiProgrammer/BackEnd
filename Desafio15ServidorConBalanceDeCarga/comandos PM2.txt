@@ -1,26 +1,34 @@
-1. Instala pm2 de manera global con npm i pm2
+1. Ejecuta terminal en la carpeta "DESAFIO15SERVIDORCONBALANCEDECARGA"
 
-2. Ejecuta en la ruta del server:
-
-Modo x/cpus cluster:
+Ejecuta => Modo x/cpus cluster:
 pm2 start src/server.js --name="Server1 8081" --watch -i max -- 8081
 
-Modo fork:
+Ejecuta => Modo fork:
 pm2 start src/server.js --name="Server2 8082" --watch -- 8082
 pm2 start src/server.js --name="Server3 8083" --watch -- 8083
 pm2 start src/server.js --name="Server4 8084" --watch -- 8084
 pm2 start src/server.js --name="Server5 8085" --watch -- 8085
 
-3. pm2 list
+3. pm2 list (muestra como el estado de los servers).
 
-4. Probar las rutas localhost:8081 y localhost:8082
+3. Correr en powershell /nginx.exe en la ruta "DESAFIO15SERVIDORCONBALANCEDECARGA/src" .
 
-4. pm2 stop all && pm2 kill all
+http://localhost:80/
+http://localhost:80/nginx
+http://localhost:80/api/randoms
+
+Probar las rutas localhost:8081,[8082,8083,8084 y 8085] 
+
+http://localhost:8081
+http://localhost:8082
+http://localhost:8083
+http://localhost:8084
+http://localhost:8085
 
 
+4.pm2 kill all (para cerrar todo)
 
-
-------------------
+5.Listo !
 
 
 
