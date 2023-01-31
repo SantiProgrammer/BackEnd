@@ -68,7 +68,7 @@ app.use('/public', express.static(__dirname + '/public'));
 
 /* View engeine */
 app.set('view engine', 'hbs');
-app.set('views', './views');
+app.set('views', './src/views');
 app.engine('hbs',
   engine({
     extname: '.hbs',

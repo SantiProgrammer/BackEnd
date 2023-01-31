@@ -1,16 +1,10 @@
+// Socket.io
 const socket = io();
 
-/* Desnormalizacion */
+// Desnormalizacion
 const authorSchema = new normalizr.schema.Entity('authors', {}, { idAttribute: 'email' })
-const messageSchema = new normalizr.schema.Entity('messages', {
-    author: authorSchema
-})
-
-const chatSchema = new normalizr.schema.Entity("chats", {
-    messages: [messageSchema]
-})
-
-
+const messageSchema = new normalizr.schema.Entity('messages', { author: authorSchema });
+const chatSchema = new normalizr.schema.Entity("chats", { messages: [messageSchema] });
 
 // Envia mensajes al backend
 function enviarMsg() {
@@ -19,7 +13,6 @@ function enviarMsg() {
     const apellido = document.getElementById("apellido").value;
     const edad = document.getElementById("edad").value;
     const alias = document.getElementById("alias").value
-
     const avatar = document.getElementById("avatar").value;
     const chatInput = document.getElementById("inputMsg").value;
     const userData = {
@@ -36,7 +29,6 @@ function enviarMsg() {
     console.log(userData);
     chatInput.value = "";
     socket.emit("msg", userData);
-
     return false;
 }
 
@@ -44,23 +36,12 @@ function enviarMsg() {
 socket.on("msg-list", (data) => {
 
     const dataMsg = normalizr.denormalize(data.result, chatSchema, data.entities)
-
-    // Porcentaje deberia ser algo asi ...... idea pero no funciona aun
-
     const totalNormal = JSON.stringify(dataMsg, null, 4).length
     const normalizado = JSON.stringify(data, null, 4).length
-
     var porcentaje = (normalizado / totalNormal) * 100
     var intPorcentaje = Math.round(porcentaje);
-    const h5 = document.getElementById('h5')
-    h5.innerText = `Compression: ${intPorcentaje} %`
-
-
-    console.log("Normalizado:", JSON.stringify(dataMsg, null, 4).length)
-    console.log("Normal:", JSON.stringify(data, null, 4).length)
-
-    console.log("data:", dataMsg);
-
+    const h5 = document.getElementById('h5');
+    h5.innerText = `Compression: ${intPorcentaje} %`;
     let html = '';
     dataMsg.messages.forEach(item => {
         html +=
@@ -71,7 +52,6 @@ socket.on("msg-list", (data) => {
                 `
     })
     document.getElementById("mgs-area").innerHTML = html;
-
 });
 
 // Funcion para LogIn 
@@ -85,7 +65,6 @@ function enviarLog() {
 
 
 // Funcion para enviar productos el backend
-
 function postProducto() {
     const nombreProducto = document.getElementById("nombreProducto").value;
     const precioProducto = document.getElementById("precioProducto").value;
@@ -95,7 +74,6 @@ function postProducto() {
 }
 
 // productos FS
-
 socket.on("products-list", (data) => {
     console.log("products-list:" + data);
     let html = '';
@@ -110,11 +88,9 @@ socket.on("products-list", (data) => {
         `
     })
     document.getElementById("products-list").innerHTML = html;
-
 });
 
 // Faker productos / productos-test
-
 socket.on("productos-test", (data) => {
     console.log("productos-test:" + data);
     let html = '';
@@ -129,10 +105,7 @@ socket.on("productos-test", (data) => {
         `
     })
     document.getElementById("productos-test").innerHTML = html;
-
 });
-
-
 
 document.getElementById("preventDefault").addEventListener("click", function (event) {
     event.preventDefault()
