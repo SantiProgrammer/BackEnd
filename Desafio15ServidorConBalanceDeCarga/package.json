@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "inicia con los comandos PM2 (si no fallan las rutas)"
+    "start": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "Santiago Morera",

@@ -8,7 +8,8 @@ const LocalStrategy = require("passport-local").Strategy;
 const Usuarios = require("./models/usuarios");
 const bcrypt = require("bcrypt");
 const routes = require("./routes/routes");
-const routesChat = require("./routes/routesChat")
+const routesChat = require("./routes/routesChat");
+const routesNginx = require("./routes/routesNginx");
 const mongoose = require("mongoose");
 const { engine } = require('express-handlebars');
 const redis = require("redis");
@@ -88,6 +89,8 @@ app.get("/signup", routes.getSignup);
 app.get("/failsignup", routes.getFailsignup);
 app.get("/logout", routes.getLogout);
 app.get('/chat', routesChat.GetChat);
+app.get('/nginx', routesNginx.getNginx);
+app.get('/api/randoms', routesNginx.getApiRandoms);
 app.get("/form", checkAuthentication, (req, res) => { res.render('form', { layout: 'logged' }); });
 app.get('/products-list', async (req, res) => { res.render('products-list'); });
 app.get('/productos-test', async (req, res) => { res.render('productos-test'); });

@@ -7,9 +7,21 @@ pm2 start src/server.js --name="Server1 8081" --watch -i max -- 8081
 
 Modo fork:
 pm2 start src/server.js --name="Server2 8082" --watch -- 8082
+pm2 start src/server.js --name="Server3 8083" --watch -- 8083
+pm2 start src/server.js --name="Server4 8084" --watch -- 8084
+pm2 start src/server.js --name="Server5 8085" --watch -- 8085
 
 3. pm2 list
 
 4. Probar las rutas localhost:8081 y localhost:8082
 
 4. pm2 stop all && pm2 kill all
+
+
+
+
+------------------
+
+
+
+
