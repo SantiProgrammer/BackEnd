@@ -1,5 +1,3 @@
-const GetChat = async (req, res) => {
-    res.render('chat')
-}
+const GetChat = async (req, res) => { res.render('chat') }
 
 module.exports = { GetChat }

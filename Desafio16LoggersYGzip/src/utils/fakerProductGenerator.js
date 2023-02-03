@@ -1,4 +1,3 @@
-/* import faker from 'faker'; */
 const faker = require('faker')
 
 faker.locale = 'es'
@@ -14,9 +13,6 @@ const generateFakeProducts = (n) => {
         }
         fakeProducts.push(fakeProduct)
     }
-
-    /* console.log('Se generaron productos con Faker.js'); */
-
     return fakeProducts
 }
 
