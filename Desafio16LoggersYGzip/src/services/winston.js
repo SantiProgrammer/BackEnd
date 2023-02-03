@@ -7,7 +7,7 @@ const wLogger = () => {
             // Consola: solo niveles Verbose, Info, Warn, Error.
             new winston.transports.Console({ level: 'verbose' }),
             // File: Error.
-            new winston.transports.File({ filename: 'src/logs/info.log', level: 'error' }),
+            new winston.transports.File({ filename: 'src/logs/winstonError.log', level: 'error' }),
         ]
     })
 

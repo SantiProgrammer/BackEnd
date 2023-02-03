@@ -34,7 +34,6 @@ function enviarMsg() {
 
 // Recibe mensajes del back y los renderiza en el DOM
 socket.on("msg-list", (data) => {
-
     const dataMsg = normalizr.denormalize(data.result, chatSchema, data.entities)
     const totalNormal = JSON.stringify(dataMsg, null, 4).length
     const normalizado = JSON.stringify(data, null, 4).length
@@ -58,7 +57,6 @@ socket.on("msg-list", (data) => {
 function enviarLog() {
     const usuario = document.getElementById("usuario").value;
     const contraseña = document.getElementById("contraseña").value;
-    console.log('se intento logear');
     socket.emit("userData", { usuario, contraseña });
     return false;
 }
@@ -75,7 +73,6 @@ function postProducto() {
 
 // productos FS
 socket.on("products-list", (data) => {
-    console.log("products-list:" + data);
     let html = '';
     data.forEach(item => {
         html +=
@@ -92,7 +89,6 @@ socket.on("products-list", (data) => {
 
 // Faker productos / productos-test
 socket.on("productos-test", (data) => {
-    console.log("productos-test:" + data);
     let html = '';
     data.forEach(item => {
         html +=

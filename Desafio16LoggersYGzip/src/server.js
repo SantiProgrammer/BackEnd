@@ -17,12 +17,13 @@ const { engine } = require('express-handlebars');
 const redis = require("redis");
 const generateFakeProducts = require('./utils/fakerProductGenerator');
 const moment = require('moment');
-const Contenedor = require('./container/contenedor');
-const ContenedorMsg = require('./container/contenedorMsg');
+const cProdutosFS = require('./container/productosFS');
+const cMensajesFS = require('./container/mensajesFS');
 
-const contenedorProductos = new Contenedor('productos');
-const dataMsg = new ContenedorMsg;
+const contenedorProductos = new cProdutosFS('productos');
+const dataMsg = new cMensajesFS('mensajes');
 const productosFS = contenedorProductos.getAll()
+console.log('productos:', productosFS);
 const timestamp = moment().format('h:mm a');
 const FakeP = generateFakeProducts(5);
 const compression = require('compression')
@@ -41,7 +42,6 @@ client
     throw "can not connect to Redis! ❌";
   });
 const RedisStore = require("connect-redis")(session);
-
 
 
 /* Middlewares */
