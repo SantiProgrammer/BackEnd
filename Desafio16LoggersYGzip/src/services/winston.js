@@ -4,10 +4,11 @@ const wLogger = () => {
     const wLogger = winston.createLogger({
         level: 'warn',
         transports: [
-            // Consola: solo niveles Verbose, Info, Warn, Error.
+            // se imprimen por consola: solo niveles Verbose, Info, Warn, Error.
             new winston.transports.Console({ level: 'verbose' }),
-            // File: Error.
-            new winston.transports.File({ filename: 'src/logs/winstonError.log', level: 'error' }),
+            // se guardan en archivo.log
+            new winston.transports.File({ filename: 'src/logs/warn.log', level: 'warn' }),
+            new winston.transports.File({ filename: 'src/logs/error.log', level: 'error' }),
         ]
     })
 
@@ -16,10 +17,14 @@ const wLogger = () => {
 
 module.exports = wLogger();
 
+// wLogger.log('info', "mensaje info")
+// wLogger.log('warn', "mensaje warn")
+// wLogger.log('error', "mensaje error")
 
 
 
 
+// Ejemplos:
 // logger.log('silly', "127.0.0.1 - log silly")
 // logger.log('debug', "127.0.0.1 - log debug")
 // wLogger.log('verbose', "127.0.0.1 - log verbose")

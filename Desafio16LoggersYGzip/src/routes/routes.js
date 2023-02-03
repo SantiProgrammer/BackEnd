@@ -1,3 +1,4 @@
+const wLogger = require("../services/winston");
 
 function getRoot(req, res) {
   res.render("home", {});
@@ -52,6 +53,7 @@ function getLogout(req, res) {
 }
 
 function failRoute(req, res) {
+  wLogger.log('warn', "Se golpeo una ruta que no existe")
   res.status(404).render("routing-error", {});
 }
 

@@ -6,49 +6,10 @@
          "nombre": "Santiago",
          "apellido": "Morera",
          "edad": "31",
-         "alias": "Don Santiago",
+         "alias": "Santi",
          "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
       },
-      "text": "Hola esto es un chat con websocket.io",
+      "text":"Hola esto es un chat con websocket.io",
       "id": 1
-   },
-   {
-      "author": {
-         "email": "santi@gmail.com",
-         "nombre": "Santiago",
-         "apellido": "Morera",
-         "edad": "31",
-         "alias": "Don Santiago",
-         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
-      },
-      "text": "Hola",
-      "timestamp": "10:19 pm",
-      "id": 2
-   },
-   {
-      "author": {
-         "email": "santi@gmail.com",
-         "nombre": "Santiago",
-         "apellido": "Morera",
-         "edad": "31",
-         "alias": "DonPedrito",
-         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
-      },
-      "text": "Mensaje de pedrito",
-      "timestamp": "4:43 pm",
-      "id": 3
-   },
-   {
-      "author": {
-         "email": "santi@gmail.com",
-         "nombre": "Santiago",
-         "apellido": "Morera",
-         "edad": "31",
-         "alias": "Don Santiago",
-         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
-      },
-      "text": "Mensaje de prueba",
-      "timestamp": "7:10 pm",
-      "id": 4
    }
 ]

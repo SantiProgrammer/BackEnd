@@ -1,9 +1,9 @@
 const fs = require('fs');
+const wLogger = require("../services/winston");
 
-
-class Contenedor {
-    constructor(filename) {
-        this.filePath = `./src/api/${filename}.json`;
+class ContainerFileSystem {
+    constructor(fileName) {
+        this.filePath = `./src/api/${fileName}.json`;
     }
 
     getAll = async () => {
@@ -12,7 +12,7 @@ class Contenedor {
             const productos = JSON.parse(archivo);
             return productos;
         } catch (error) {
-            console.log(`Ocurrio un error: ${error}`);
+            throw wLogger.log('error', `Ocurrio un error: ${error}`);
         }
     };
 
@@ -22,7 +22,7 @@ class Contenedor {
             const productos = JSON.parse(archivo);
             return productos;
         } catch (error) {
-            console.log(`Ocurrio un error: ${error}`);
+            throw wLogger.log('error', `Ocurrio un error: ${error}`);
         }
     };
 
@@ -33,9 +33,8 @@ class Contenedor {
             producto.id = id;
             productos.push(producto);
             await fs.promises.writeFile(this.filePath, JSON.stringify(productos, null, 3));
-            console.log(`Se salvo el objeto con el id ${id}`);
         } catch (error) {
-            console.log(`Ocurrio un error: ${error}`);
+            throw wLogger.log('error', `Ocurrio un error: ${error}`);
         }
     };
 
@@ -43,13 +42,10 @@ class Contenedor {
         try {
             const productos = await this.getAll();
             const productoEncontrado = productos.find((producto) => producto.id == id);
-
             if (!productoEncontrado) return console.log('El id del pruducto no existe');
-            console.log(`Producto encontrado con el id ${id}: ${JSON.stringify(productoEncontrado)}`)
             return productoEncontrado;
-
         } catch (error) {
-            console.log(`Ocurrio un error: ${error}`);
+            throw wLogger.log('error', `Ocurrio un error: ${error}`);
         }
     };
 
@@ -61,11 +57,11 @@ class Contenedor {
             if (!productoEncontrado) return console.log('El id del pruducto no existe');
             const productosFiltrados = productos.filter((producto) => producto.id != id);
             await fs.promises.writeFile(this.filePath, JSON.stringify(productosFiltrados, null, 3));
-            console.log(`Producto con el id ${id}, borrado exitosamente!`);
         } catch (error) {
-            console.log(`Ocurrio un error: ${error}`);
+            throw wLogger.log('error', `Ocurrio un error: ${error}`);
         }
     }
+
 
     updateById = async (id, nombre, precio, thumbnail) => {
         try {
@@ -75,28 +71,27 @@ class Contenedor {
                 item.nombre = nombre
                 item.precio = precio
                 item.thumbnail = thumbnail
-                console.log(item);
                 await fs.promises.writeFile(this.filePath, JSON.stringify(productos, null, 2))
                 return item
             } else {
                 return { error: 'Product not found' }
             }
         } catch (error) {
-            throw new Error(error)
+            throw wLogger.log('error', `Ocurrio un error: ${error}`);
         }
     }
 
     deleteAll = async () => {
         try {
             await fs.promises.writeFile(this.filePath, JSON.stringify([], null, 3));
-            console.log('Se ha borrado todo el array de productos exitosamente!');
         } catch (error) {
-            console.log(`Ocurrio un error: ${error}`);
+            throw wLogger.log('error', `Ocurrio un error: ${error}`);
         }
     }
+
 }
 
-module.exports = Contenedor;
+module.exports = ContainerFileSystem;
 
 
 

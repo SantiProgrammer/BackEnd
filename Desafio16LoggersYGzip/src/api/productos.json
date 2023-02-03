@@ -14,7 +14,7 @@
    {
       "id": 3,
       "nombre": "Nike shoes",
-      "precio": 1200,
+      "precio": 1222,
       "thumbnail": "../public/img/nike-shoes.jpg"
    }
 ]

@@ -17,26 +17,23 @@ const { engine } = require('express-handlebars');
 const redis = require("redis");
 const generateFakeProducts = require('./utils/fakerProductGenerator');
 const moment = require('moment');
-const cProdutosFS = require('./container/productosFS');
-const cMensajesFS = require('./container/mensajesFS');
 
-const contenedorProductos = new cProdutosFS('productos');
-const dataMsg = new cMensajesFS('mensajes');
-const productosFS = contenedorProductos.getAll()
-console.log('productos:', productosFS);
+const containerFileSystem = require('./container/containerFileSystem');
+const containerFSProductos = new containerFileSystem('productos');
+const containerFSMensajes = new containerFileSystem('mensajes');
+const productosFS = containerFSProductos.getAll()
+
 const timestamp = moment().format('h:mm a');
 const FakeP = generateFakeProducts(5);
 const compression = require('compression')
 
 const PORT = parseInt(process.argv[2]) || 8080;
-httpServer.listen(PORT, () => console.log("SERVER ON http://localhost:" + PORT));
-
-/* wLogger.log('error', "127.0.0.1 - log error") */
+httpServer.listen(PORT, () => wLogger.log('info', "SERVER ON http://localhost:" + PORT));
 
 const client = redis.createClient({ legacyMode: true, });
 client
   .connect()
-  .then(() => console.log("\x1b[32m", "Connected to REDIS ✅"))
+  .then(() => wLogger.log('info', "Connected to REDIS ✅"))
   .catch((e) => {
     console.error(e);
     throw "can not connect to Redis! ❌";
@@ -89,6 +86,10 @@ app.get("/signup", routes.getSignup);
 app.get("/failsignup", routes.getFailsignup);
 app.get("/logout", routes.getLogout);
 app.get('/chat', routesChat.GetChat);
+app.get('/info', (req, res) => {
+  res.render('info')
+});
+
 app.get('/nginx', routesNginx.getNginx);
 app.get('/api/randoms', routesNginx.getApiRandoms);
 app.get("/form", checkAuthentication, (req, res) => { res.render('form', { layout: 'logged' }); });
@@ -203,7 +204,7 @@ const normalizarData = (data) => {
   return dataNormalizada;
 }
 const normalizarMensajes = async () => {
-  const messages = await dataMsg.getAll();
+  const messages = await containerFSMensajes.getAll();
   const normalizedMessages = normalizarData(messages);
   return normalizedMessages;
 
@@ -215,12 +216,12 @@ io.on("connection", async (socket) => {
   socket.emit("productos-test", await FakeP)
   socket.emit("msg-list", await normalizarMensajes());
   socket.on("product", async (data) => {
-    await contenedorProductos.save(data);
-    io.emit("product-list", await productosFS);
+    await containerFSProductos.save(data);
+    io.sockets.emit("product-list", await productosFS);
   });
 
   socket.on("msg", async (data) => {
-    await dataMsg.save({ ...data, timestamp: timestamp });
+    await containerFSMensajes.save({ ...data, timestamp: timestamp });
     io.sockets.emit("msg-list", await normalizarMensajes());
   });
 });
