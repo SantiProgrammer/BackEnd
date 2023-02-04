@@ -53,7 +53,8 @@ function getLogout(req, res) {
 }
 
 function failRoute(req, res) {
-  wLogger.log('warn', "Se golpeo una ruta que no existe")
+  const clientRoute = req.params;
+  wLogger.log('warn', `Route entered by the client: ${JSON.stringify(clientRoute)}`)
   res.status(404).render("routing-error", {});
 }
 

@@ -27,8 +27,23 @@ nav {
 }
 
 .navbar-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 
     & a:hover {
         color: rgb(97, 97, 97);
+    }
+}
+
+
+.cart {
+    width: 30px;
+    margin-left: 10px;
+    transition: .1s all ease-out;
+
+    &:hover {
+        transform: scale(1.1);
     }
 }
