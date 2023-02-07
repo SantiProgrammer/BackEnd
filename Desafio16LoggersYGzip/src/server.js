@@ -35,8 +35,7 @@ client
   .connect()
   .then(() => wLogger.log('info', "Connected to REDIS ✅"))
   .catch((e) => {
-    console.error(e);
-    throw "can not connect to Redis! ❌";
+    throw wLogger.log('error', `Can not connect to Redis! ❌ ${e}`);
   });
 const RedisStore = require("connect-redis")(session);
 
@@ -138,12 +137,12 @@ passport.use(
       if (err) return done(err);
 
       if (!user) {
-        console.log("User Not Found with username " + username);
+        wLogger.log('warn', `User Not Found with username ${username}`)
         return done(null, false);
       }
 
       if (!isValidPassword(user, password)) {
-        console.log("Invalid Password");
+        wLogger.log('warn', `Invalid Password`)
         return done(null, false);
       }
       // no corto por error, ni corto por sin user, paso! ...
@@ -162,12 +161,12 @@ passport.use(
         if (err) {
 
           res.render('usuario-registrado');
-          console.log("❌ Error in SignUp: " + err);
+          wLogger.log('warn', "❌ Error in SignUp: " + err);
           return done(err);
         }
 
         if (user) {
-          console.log("User already exists");
+          wLogger.log('warn', "User already exists");
           return done(null, false);
         }
 
@@ -177,11 +176,11 @@ passport.use(
         };
         Usuarios.create(newUser, (err, userWithId) => {
           if (err) {
-            console.log("❌ Error in Saving user: " + err);
+            wLogger.log('warn', "❌ Error in Saving user: " + err);
             return done(err);
           }
-          console.log(user);
-          console.log("User Registration succesful ✅");
+          wLogger.log(user);
+          wLogger.log('warn', "User Registration succesful ✅");
           return done(null, userWithId);
         });
       });

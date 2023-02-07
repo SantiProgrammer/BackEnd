@@ -42,7 +42,7 @@ class ContainerFileSystem {
         try {
             const productos = await this.getAll();
             const productoEncontrado = productos.find((producto) => producto.id == id);
-            if (!productoEncontrado) return console.log('El id del pruducto no existe');
+            if (!productoEncontrado) return wLogger.log('warn', "El id del pruducto no existe");
             return productoEncontrado;
         } catch (error) {
             throw wLogger.log('error', `Ocurrio un error: ${error}`);
@@ -54,7 +54,7 @@ class ContainerFileSystem {
         try {
             const productos = await this.getAll();
             const productoEncontrado = productos.find((producto) => producto.id == id);
-            if (!productoEncontrado) return console.log('El id del pruducto no existe');
+            if (!productoEncontrado) return wLogger.log('warn', "El id del pruducto no existe");
             const productosFiltrados = productos.filter((producto) => producto.id != id);
             await fs.promises.writeFile(this.filePath, JSON.stringify(productosFiltrados, null, 3));
         } catch (error) {

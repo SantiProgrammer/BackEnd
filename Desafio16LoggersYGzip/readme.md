@@ -7,5 +7,8 @@
 4. artillery quick --count 50 -n 20 http://localhost:8080/info > result_c.log.txt
 5. resultados en result_c.log.txt y result_sinC.log.txt.
 
-6. autocanon (falta)
-7. 0x (falta)
+5.5 curl -X GET "http://localhost:8080/newUser?username=marian&password=qwerty123"
+
+5.5 node --prof server.js
+
+6. 0x server.js

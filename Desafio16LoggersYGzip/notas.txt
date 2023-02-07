@@ -1,4 +1,0 @@
-artillery quick --count 50 -n 20 http://localhost:8080/info > result_c.log.txt
-
-
---prof-process
