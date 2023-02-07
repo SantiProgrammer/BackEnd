@@ -86,6 +86,7 @@ app.get("/failsignup", routes.getFailsignup);
 app.get("/logout", routes.getLogout);
 app.get('/chat', routesChat.GetChat);
 app.get('/info', (req, res) => {
+  console.log('Atillery test')
   res.render('info')
 });
 
