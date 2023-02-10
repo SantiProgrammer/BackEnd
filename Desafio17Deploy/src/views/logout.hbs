@@ -1,0 +1,14 @@
+<h2>Logout success!</h2>
+<img src="https://cdn-icons-png.flaticon.com/512/1176/1176441.png" class="arrow" alt="success!">
+<p>Vuelve pronto</p>
+<p> <strong class="capitalize">{{user.username}}</strong> </p>
+
+
+<script>
+    const timer = () => {
+  setTimeout(() => {
+    document.location.href = '/login'
+  }, 2000);
+    }
+    timer()
+</script>

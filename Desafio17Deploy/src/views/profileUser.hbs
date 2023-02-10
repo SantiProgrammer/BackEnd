@@ -1,0 +1,13 @@
+<p id="username" >Bienvenido!</p>
+<p> <strong class="capitalize">{{user.username}}</strong> </p>
+<img src="https://cdn-icons-png.flaticon.com/512/8832/8832108.png" class="arrow" alt="success!">
+<h2>Login success! </h2>
+
+<script>
+    const timer = () => {
+  setTimeout(() => {
+    document.location.href = '/ruta-protegida'
+  }, 2000);
+    }
+    timer()
+</script>

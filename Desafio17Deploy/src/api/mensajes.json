@@ -1,0 +1,15 @@
+[
+   {
+      "timestamp": "5:48 pm",
+      "author": {
+         "email": "santi@gmail.com",
+         "nombre": "Santiago",
+         "apellido": "Morera",
+         "edad": "31",
+         "alias": "Santi",
+         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
+      },
+      "text":"Hola esto es un chat con websocket.io",
+      "id": 1
+   }
+]
