@@ -1,0 +1,6 @@
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/apple-touch-icon-precomposed.png\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/apple-touch-icon.png\"}"}
+{"level":"error","message":"Can not connect to Redis! ❌❌ ReferenceError: CLIENT_RENEG_WINDOW is not defined"}
+{"level":"warn","message":"Invalid Password"}
+{"level":"warn","message":"User already exists"}

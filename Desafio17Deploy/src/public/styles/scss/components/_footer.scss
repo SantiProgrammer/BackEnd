@@ -1,0 +1,20 @@
+/* footer */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a,
+a:visited {
+    color: rgb(170, 170, 170);
+    animation: fadeIn 1.5s;
+    font-size: 12px;
+    text-decoration: none;
+}
