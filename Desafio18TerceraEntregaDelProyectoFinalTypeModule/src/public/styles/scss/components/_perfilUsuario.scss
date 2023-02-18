@@ -1,0 +1,38 @@
+/* Perfil de usuario */
+
+.user-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px;
+    z-index: -1;
+
+    .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+
+        .user-card-body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            flex-direction: column;
+        }
+
+    }
+
+
+}
+
+.avatar {
+    width: 150px;
+}

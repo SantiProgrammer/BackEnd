@@ -117,3 +117,5 @@
 {"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
 {"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
 {"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED ::1:6379"}
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED ::1:6379"}
+{"level":"warn","message":"User Registration succesful ✅"}

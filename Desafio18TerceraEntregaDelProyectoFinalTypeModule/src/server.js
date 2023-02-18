@@ -143,8 +143,8 @@ app.get('/productos-test', async (req, res) => {
   }
 });
 app.get("/ruta-protegida", checkAuthentication, (req, res) => {
-  const { username, password } = req.user;
-  const user = { username, password };
+  const { username, password, edad, telefono, direccion, url, nombre } = req.user;
+  const user = { username, password, edad, telefono, direccion, url, nombre };
   const admin = JSON.stringify(req.session.admin);
   res.render("private", { layout: 'logged', user, admin })
 });
@@ -204,7 +204,7 @@ passport.use(
     {
       passReqToCallback: true,
     },
-    (res, username, password, done, age) => {
+    (req, username, password, done) => {
       Usuarios.findOne({ username: username }, function (err, user) {
         if (err) {
 
@@ -220,7 +220,12 @@ passport.use(
 
         const newUser = {
           username: username,
-          password: createHash(password)
+          password: createHash(password),
+          nombre: req.body.nombre,
+          direccion: req.body.direccion,
+          edad: req.body.edad,
+          telefono: req.body.telefono,
+          url: req.body.url
         };
         Usuarios.create(newUser, (err, userWithId) => {
           if (err) {

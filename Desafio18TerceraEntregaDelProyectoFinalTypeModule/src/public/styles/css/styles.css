@@ -91,8 +91,8 @@ h1 {
 }
 
 .json {
-  color: green;
-  max-width: 208px;
+  color: rgb(0, 204, 0);
+  max-width: 275px;
   background: black;
   padding: 10px;
   border-radius: 10px;
@@ -222,9 +222,9 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 200px;
   margin: 5px;
   height: 30px;
+  width: 300px;
   border-radius: 10px;
 }
 
@@ -327,6 +327,39 @@ nav a:visited {
 
 a {
   color: rgb(0, 0, 0);
+}
+
+/* Perfil de usuario */
+.user-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: aliceblue;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 20px;
+  z-index: -1;
+}
+.user-card .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.user-card .column .user-card-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 150px;
 }
 
 /* products */
