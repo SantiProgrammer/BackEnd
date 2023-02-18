@@ -1,1 +1,2 @@
 {"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"error","message":"Can not connect to Redis! ❌❌ ReferenceError: CLIENT_RENEG_WINDOW is not defined"}

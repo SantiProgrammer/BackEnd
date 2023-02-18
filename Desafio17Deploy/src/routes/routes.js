@@ -1,4 +1,4 @@
-const wLogger = require("../services/winston");
+const wLogger = require("../utils/winston");
 
 function getRoot(req, res) {
   res.render("home", {});

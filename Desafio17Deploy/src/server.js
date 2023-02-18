@@ -1,7 +1,8 @@
 const express = require("express");
+require('dotenv').config();
 const session = require("express-session");
 const app = express();
-const wLogger = require("./services/winston")
+const wLogger = require("./utils/winston")
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer);
 const passport = require("passport");
@@ -11,11 +12,12 @@ const bcrypt = require("bcrypt");
 const routes = require("./routes/routes");
 const routesChat = require("./routes/routesChat");
 const routesNginx = require("./routes/routesNginx");
-const mongoConect = require("./services/mongo");
-mongoConect();
+const MongoStore = require('connect-mongo');
+const mongoConnect = require("./services/mongo");
+mongoConnect();
 const { engine } = require('express-handlebars');
 const redis = require("redis");
-const generateFakeProducts = require('./utils/fakerProductGenerator');
+const generateFakeProducts = require('./mocks/fakerProductGenerator');
 const moment = require('moment');
 
 const containerFileSystem = require('./container/containerFileSystem');
@@ -27,24 +29,35 @@ const timestamp = moment().format('h:mm a');
 const FakeP = generateFakeProducts(5);
 const compression = require('compression')
 
-const PORT = parseInt(process.argv[2]) || 8080;
-httpServer.listen(PORT, () => wLogger.log('info', "SERVER ON http://localhost:" + PORT));
+const PORT = process.env.PORT || 8089;
+httpServer.listen(PORT, () => wLogger.log("info", `Server on http://localhost:${PORT}`));
 
-const client = redis.createClient({ legacyMode: true, });
-client
-  .connect()
-  .then(() => wLogger.log('info', "Connected to REDIS ✅"))
-  .catch((e) => {
-    throw wLogger.log('error', `Can not connect to Redis! ❌ ${e}`);
-  });
+const client = redis.createClient({
+  socket: {
+    host: 'containers-us-west-187.railway.app',
+    port: '6626'
+  },
+  legacyMode: true,
+  password: 'bejSQHLCZK3T031qlStf'
+});
+/* const client = redis.createClient({ legacyMode: true, }); */
+(redisConnect = async () => {
+  try {
+    return client
+      .connect()
+      .then(() => wLogger.log('info', "✅ Connected to Redis"))
+  } catch (e) {
+    throw wLogger.log('error', ` ❌ Can not connect to Redis! ${e}`);
+  }
+})();
+
 const RedisStore = require("connect-redis")(session);
-
 
 /* Middlewares */
 app.use(compression());
 app.use(
   session({
-    store: new RedisStore({ host: "localhost", port: 6379, client, ttl: 300 }),
+    store: new RedisStore({ host: "localhost", port: 6626, client, ttl: 300 }),
     secret: "keyboard cat",
     cookie: {
       httpOnly: false,
@@ -93,8 +106,20 @@ app.get('/info', (req, res) => {
 app.get('/nginx', routesNginx.getNginx);
 app.get('/api/randoms', routesNginx.getApiRandoms);
 app.get("/form", checkAuthentication, (req, res) => { res.render('form', { layout: 'logged' }); });
-app.get('/products-list', async (req, res) => { res.render('products-list'); });
-app.get('/productos-test', async (req, res) => { res.render('productos-test'); });
+app.get('/products-list', async (req, res) => {
+  try {
+    res.render('products-list');
+  } catch (e) {
+    wLogger.log('error', e)
+  }
+});
+app.get('/productos-test', async (req, res) => {
+  try {
+    res.render('productos-test');
+  } catch (e) {
+    wLogger.log('error', e)
+  }
+});
 app.get("/ruta-protegida", checkAuthentication, (req, res) => {
   const { username, password } = req.user;
   const user = { username, password };
@@ -173,14 +198,14 @@ passport.use(
 
         const newUser = {
           username: username,
-          password: createHash(password),
+          password: password, /* createHash(password), */
         };
         Usuarios.create(newUser, (err, userWithId) => {
           if (err) {
             wLogger.log('warn', "❌ Error in Saving user: " + err);
             return done(err);
           }
-          wLogger.log(user);
+          wLogger.log('info', user);
           wLogger.log('warn', "User Registration succesful ✅");
           return done(null, userWithId);
         });
@@ -192,6 +217,7 @@ passport.use(
 
 /* Normalizacion */
 const { normalize, schema } = require('normalizr');
+const { CLIENT_RENEG_WINDOW } = require("tls");
 const authorSchema = new schema.Entity('authors', {}, { idAttribute: 'email' })
 const messageSchema = new schema.Entity('messages', {
   author: authorSchema
@@ -204,24 +230,35 @@ const normalizarData = (data) => {
   return dataNormalizada;
 }
 const normalizarMensajes = async () => {
-  const messages = await containerFSMensajes.getAll();
-  const normalizedMessages = normalizarData(messages);
-  return normalizedMessages;
+  try {
+    const messages = await containerFSMensajes.getAll();
+    const normalizedMessages = normalizarData(messages);
+    return normalizedMessages;
+
+  } catch (e) {
+    wLogger.log('error', e)
+  }
+
 
 }
 
 /* Socket */
 io.on("connection", async (socket) => {
-  socket.emit("products-list", await productosFS);
-  socket.emit("productos-test", await FakeP)
-  socket.emit("msg-list", await normalizarMensajes());
-  socket.on("product", async (data) => {
-    await containerFSProductos.save(data);
-    io.sockets.emit("product-list", await productosFS);
-  });
+  try {
+    socket.emit("products-list", await productosFS);
+    socket.emit("productos-test", await FakeP)
+    socket.emit("msg-list", await normalizarMensajes());
+    socket.on("product", async (data) => {
+      await containerFSProductos.save(data);
+      io.sockets.emit("product-list", await productosFS);
+    });
 
-  socket.on("msg", async (data) => {
-    await containerFSMensajes.save({ ...data, timestamp: timestamp });
-    io.sockets.emit("msg-list", await normalizarMensajes());
-  });
+    socket.on("msg", async (data) => {
+      await containerFSMensajes.save({ ...data, timestamp: timestamp });
+      io.sockets.emit("msg-list", await normalizarMensajes());
+    });
+
+  } catch (e) {
+    wLogger.log('error', e)
+  }
 });

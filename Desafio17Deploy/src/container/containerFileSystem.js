@@ -1,5 +1,5 @@
 const fs = require('fs');
-const wLogger = require("../services/winston");
+const wLogger = require("../utils/winston");
 
 class ContainerFileSystem {
     constructor(fileName) {

@@ -1,0 +1,211 @@
+/* carrito */
+#productosCounter {
+  color: $font-color;
+  font-size: 10px;
+}
+
+.my-canvas {
+  color: black;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  margin: 15px;
+  height: fit-content;
+
+  body.dark & {
+    background-color: $darkgrey;
+    color: white;
+  }
+}
+
+.offcanvas-body {
+  overflow: overlay;
+  max-height: 70vh;
+}
+
+.carrito {
+  right: 15px;
+  top: 15px;
+  flex-direction: row;
+}
+
+@media (max-width: 990px) {
+  .carrito {
+    position: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+  }
+}
+
+.carrito img {
+  width: 25px;
+  flex-direction: row;
+  margin: 0px 10px 0px 10px;
+  transition: all linear .1s;
+  -webkit-transition: all linear .1s;
+  -moz-transition: all linear .1s;
+  -ms-transition: all linear .1s;
+  -o-transition: all linear .1s;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+
+
+
+
+#carrito-wrapper {
+
+  background-color: rgba(128, 128, 128, 0.103);
+
+  .img-carrito {
+    object-fit: cover;
+    width: 70px;
+    margin: 10px;
+  }
+
+  .card-detalle {
+    padding: 0em 1em;
+
+    body.dark {
+      color: white !important;
+    }
+
+    .card-title {
+      font-weight: 700;
+      color: black;
+      border-bottom: 1px gray solid;
+      text-align: start;
+
+      body.dark {
+        color: white !important;
+      }
+    }
+
+    .card-text {
+      color: black;
+      margin-bottom: 1px;
+
+      body.dark {
+        color: white !important;
+      }
+    }
+  }
+
+  .eliminar {
+    align-self: center;
+    background-color: $botonColor;
+    border: none;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+}
+
+
+.totalCarrito {
+  border: 2px solid rgba(136, 136, 136, 0.37);
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  width: 338px;
+  margin: 10px auto;
+  background-color: white;
+  color: rgb(71, 71, 71);
+  font-weight: bold;
+
+}
+
+
+
+
+.botonCarrito {
+  display: flex;
+  justify-content: space-around;
+
+  .pagar {
+    border: 2px solid rgb(64, 77, 199);
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.5em 2em;
+    margin-bottom: 1em;
+    background-color: white;
+    color: rgb(71, 71, 71);
+
+    font-weight: bold;
+
+    body.dark & {
+      background-color: $darkgrey;
+      color: rgb(187, 187, 187);
+    }
+  }
+
+  .pagar:hover {
+    background-color: rgb(12, 32, 214);
+    color: rgb(187, 187, 187);
+
+  }
+
+  .vaciar-carrito {
+    border: 2px solid rgba(136, 136, 136, 0.37);
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+
+    body.dark & {
+      background-color: $darkgrey;
+      color: rgb(187, 187, 187);
+      border: 2px solid rgba(161, 72, 72, 0.37);
+    }
+  }
+
+
+}
+
+
+.card {
+  body.dark & {
+    background-color: $darkgrey;
+  }
+}
+
+#carrito-wrapper .eliminar {
+  body.dark & {
+    background-color: #302b63;
+    color: white;
+  }
+}
+
+
+#carrito-wrapper .card-detalle .card-title {
+  body.dark & {
+    color: rgb(187, 187, 187);
+  }
+}
+
+#carrito-wrapper .card-detalle .card-text {
+  body.dark & {
+    color: rgb(187, 187, 187);
+  }
+
+}
+
+.totalCarrito {
+  body.dark & {
+    background-color: $darkgrey;
+    color: rgb(187, 187, 187);
+  }
+
+}
