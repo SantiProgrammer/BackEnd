@@ -1,0 +1,15 @@
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/apple-touch-icon-precomposed.png\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/apple-touch-icon.png\"}"}
+{"level":"error","message":"Can not connect to Redis! ❌❌ ReferenceError: CLIENT_RENEG_WINDOW is not defined"}
+{"level":"warn","message":"Invalid Password"}
+{"level":"warn","message":"User already exists"}
+{"level":"warn","message":"Invalid Password"}
+{"level":"warn","message":"User Not Found with username santi@gmail.com"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"❌ Error in Saving user: ValidationError: address2: Path `address2` is required., address: Path `address` is required., phone: Path `phone` is required., age: Path `age` is required., name: Path `name` is required."}
+{"level":"warn","message":"❌ Error in Saving user: ValidationError: age: Cast to Number failed for value \"[Function: verified]\" (type function) at path \"age\""}
+{"level":"warn","message":"User Registration succesful ✅"}
