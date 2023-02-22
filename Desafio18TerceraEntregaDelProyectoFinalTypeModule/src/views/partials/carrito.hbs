@@ -1,0 +1,35 @@
+<!-- Carrito canvas -->
+<div
+  class="offcanvas offcanvas-end my-canvas"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras:</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body" id="carrito-wrapper">
+    ...
+  </div>
+  <p class="totalCarrito">
+    Precio total: $<span id="totalPrecioCarrito">0</span>
+  </p>
+  <div class="botonCarrito">
+    <button id="pagarTotal" type="button" class="btn btn-primary pagar">
+      Pagar
+    </button>
+    <button
+      id="vaciarCarrito"
+      type="button"
+      class="btn btn-primary vaciar-carrito"
+    >
+      Vaciar carrito
+    </button>
+  </div>
+</div>

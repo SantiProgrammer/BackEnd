@@ -1,0 +1,121 @@
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/apple-touch-icon-precomposed.png\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/apple-touch-icon.png\"}"}
+{"level":"error","message":"Can not connect to Redis! ❌❌ ReferenceError: CLIENT_RENEG_WINDOW is not defined"}
+{"level":"warn","message":"Invalid Password"}
+{"level":"warn","message":"User already exists"}
+{"level":"warn","message":"Invalid Password"}
+{"level":"warn","message":"User Not Found with username santi@gmail.com"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"❌ Error in Saving user: ValidationError: address2: Path `address2` is required., address: Path `address` is required., phone: Path `phone` is required., age: Path `age` is required., name: Path `name` is required."}
+{"level":"warn","message":"❌ Error in Saving user: ValidationError: age: Cast to Number failed for value \"[Function: verified]\" (type function) at path \"age\""}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"❌ Error in Saving user: ValidationError: age: Path `age` is required."}
+{"level":"warn","message":"❌ Error in Saving user: ValidationError: age: Path `age` is required."}
+{"level":"warn","message":"❌ Error in Saving user: ValidationError: age: Path `age` is required."}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Not Found with username santi@gmail.com"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/products-list\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/products-list\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/products-\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/products-list\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/POST\"}"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"warn","message":"User Not Found with username Santi"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/undefined\"}"}
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED ::1:6379"}
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED ::1:6379"}
+{"level":"warn","message":"User Registration succesful ✅"}

@@ -1,0 +1,15 @@
+// base
+@import "./base/fonts.scss";
+@import "./base/keyframes.scss";
+@import "../scss/base/variables";
+
+// components
+@import "./components/inicio.scss";
+@import "./components/body.scss";
+@import "./components/navbar.scss";
+@import "./components/logged.scss";
+@import "./components/perfilUsuario.scss";
+@import "./components/productos.scss";
+@import "./components/footer.scss";
+@import "./components/private.scss";
+@import "./components/carrito.scss";

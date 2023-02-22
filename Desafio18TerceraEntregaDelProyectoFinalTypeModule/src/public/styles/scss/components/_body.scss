@@ -1,0 +1,232 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Helvetica, sans-serif;
+    background: #E0EAFC;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+
+h1 {
+    color: rgb(39, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+    animation: fadeInDown 1s;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    color: blue;
+}
+
+.json {
+    color: rgb(0, 204, 0);
+    max-width: 275px;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link-login,
+.link-login:visited {
+    text-decoration: none;
+    color: #666666;
+
+
+    &:hover {
+        color: #414141;
+    }
+}
+
+.log-button {
+    padding: 7px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2266d3;
+    transition: all .2s ease;
+    font-size: 14px;
+    color: white;
+
+    &:hover {
+        color: white !important;
+        background-color: #478cf7;
+        cursor: pointer;
+
+    }
+}
+
+.info {
+    span {
+        color: rgb(255, 187, 0);
+        font-weight: bold;
+    }
+}
+
+
+
+/* Login */
+
+.pista {
+    color: #666666;
+    font-size: 10px;
+}
+
+
+
+/* Chat */
+
+.input-msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeInUp 1s;
+
+}
+
+.chat-area {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.avatar {
+    width: 30px;
+    border-radius: 50px;
+}
+
+.avatarUrl {
+    font-size: 10px;
+}
+
+.p-email {
+    color: #666666;
+    margin: 1px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.p-email span {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.msj-container {
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    max-width: max-content;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/* form */
+
+
+
+.main-user-data {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.44);
+    animation: fadeInUp 1s;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid orange;
+    box-shadow: 0 0 10px #719ece;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.my-button {
+    background-color: #2266d3;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    padding: 10px 17px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 0, 0, 0);
+    animation: fadeIn 1.5s;
+}
+
+.my-button span {
+    margin-right: 17px;
+    display: block;
+    width: 29px;
+    height: 29px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+}
+
+.my-button:hover {
+    background-color: #478cf7;
+}
+
+.my-button:active {
+    transform: scale(0.95);
+}

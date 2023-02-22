@@ -30,13 +30,21 @@ const FakeP = generateFakeProducts(5);
 const compression = require('compression')
 
 const PORT = process.env.PORT || 8089;
+<<<<<<< HEAD
 httpServer.listen(PORT, () => console.log(`Server on http://localhost:${PORT}`));
+=======
+httpServer.listen(PORT, () => wLogger.log("info", `Server on http://localhost:${PORT}`));
+>>>>>>> 77d518a61b20cd012fe6af822a54be172161d22b
 
 const client = redis.createClient({
   socket: {
     host: 'containers-us-west-187.railway.app',
     port: '6626'
   },
+<<<<<<< HEAD
+=======
+  legacyMode: true,
+>>>>>>> 77d518a61b20cd012fe6af822a54be172161d22b
   password: 'bejSQHLCZK3T031qlStf'
 });
 /* const client = redis.createClient({ legacyMode: true, }); */
@@ -54,9 +62,15 @@ const RedisStore = require("connect-redis")(session);
 
 /* Middlewares */
 app.use(compression());
+<<<<<<< HEAD
 /* app.use(
   session({
     store: new RedisStore({ host: "localhost", port: 6379, client, ttl: 300 }),
+=======
+app.use(
+  session({
+    store: new RedisStore({ host: "localhost", port: 6626, client, ttl: 300 }),
+>>>>>>> 77d518a61b20cd012fe6af822a54be172161d22b
     secret: "keyboard cat",
     cookie: {
       httpOnly: false,
@@ -68,6 +82,7 @@ app.use(compression());
     resave: true,
     saveUninitialized: false,
   })
+<<<<<<< HEAD
 ); */
 /* app.use(
   session({
@@ -89,6 +104,9 @@ app.use(compression());
     saveUninitialized: false,
   })
 ); */
+=======
+);
+>>>>>>> 77d518a61b20cd012fe6af822a54be172161d22b
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.json());
@@ -217,13 +235,21 @@ passport.use(
 
         const newUser = {
           username: username,
+<<<<<<< HEAD
           password: createHash(password),
+=======
+          password: password, /* createHash(password), */
+>>>>>>> 77d518a61b20cd012fe6af822a54be172161d22b
         };
         Usuarios.create(newUser, (err, userWithId) => {
           if (err) {
             wLogger.log('warn', "❌ Error in Saving user: " + err);
             return done(err);
           }
+<<<<<<< HEAD
+=======
+          wLogger.log('info', user);
+>>>>>>> 77d518a61b20cd012fe6af822a54be172161d22b
           wLogger.log('warn', "User Registration succesful ✅");
           return done(null, userWithId);
         });

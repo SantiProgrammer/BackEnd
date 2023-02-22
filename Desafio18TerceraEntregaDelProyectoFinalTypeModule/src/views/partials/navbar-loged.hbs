@@ -1,0 +1,28 @@
+<nav>
+  <div class="navbar-column">
+  </div>
+  <div class="navbar-column">
+    <a href="./products-list">Productos</a>
+    <a href="./form">Agregar productos</a>
+    <a href="/showsession">Show Session</a>
+  </div>
+  <div class="navbar-column">
+    <a href="/ruta-protegida"><img src="https://cdn-icons-png.flaticon.com/512/9654/9654233.png" class="cart" alt="user-profile"></a>
+    <div class="carrito">
+      <button
+        class=""
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      ><img
+        src="https://cdn-icons-png.flaticon.com/512/3649/3649775.png"
+        class="cart"
+        alt=""
+      /><span id="productosCounter">0</span></button>
+    </div>
+    <a href="./logout" class="log-button">Log out</a>
+  </div>
+  {{> carrito}}
+
+</nav>
