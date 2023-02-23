@@ -1,0 +1,102 @@
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"error","message":"Can not connect to Redis! ❌❌ ReferenceError: CLIENT_RENEG_WINDOW is not defined"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"error socket containerMongoDB is not defined","stack":"ReferenceError: containerMongoDB is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:264:40)\n    at Namespace.emit (node:events:513:28)\n    at Namespace.emitReserved (/Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/typed-events.js:56:22)\n    at /Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/node_modules/socket.io/dist/namespace.js:234:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED ::1:6379"}
+{"level":"error","message":"Can not connect to Redis! ❌ Error: connect ECONNREFUSED ::1:6379"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"error socket carrito is not defined","stack":"ReferenceError: carrito is not defined\n    at Namespace.<anonymous> (file:///Users/santiagomorera/Desktop/Desafio18TerceraEntregaDelProyactoFinalTypeModule/src/server.js:304:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"can not connect to the mongo! ❌ MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/"}

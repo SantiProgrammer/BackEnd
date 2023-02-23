@@ -1,0 +1,94 @@
+  [
+    {
+      "id": 1,
+      "nombre": "Leche",
+      "precio": 20,
+      "img": "../public/img/imagenes/caja-de-leche.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Harina",
+      "precio": 15,
+      "img": "../public/img/imagenes/harina.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Huevo",
+      "precio": 70,
+      "img": "../public/img/imagenes/huevo.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Cereal",
+      "precio": 80,
+      "img": "../public/img/imagenes/cereal.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Avena",
+      "precio": 10,
+      "img": "../public/img/imagenes/gachas-de-avena.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Cafe",
+      "precio": 150,
+      "img": "../public/img/imagenes/bolsa-de-cafe.png"
+    },
+    {
+      "id": 7,
+      "nombre": "Hielo",
+      "precio": 50,
+      "img": "../public/img/imagenes/caja-de-hielo.png"
+    },
+    {
+      "id": 8,
+      "nombre": "Chocolate",
+      "precio": 30,
+      "img": "../public/img/imagenes/barra-de-chocolate.png"
+    },
+    {
+      "id": 9,
+      "nombre": "CupCake",
+      "precio": 290,
+      "img": "../public/img/imagenes/cup-cake.png"
+    },
+    {
+      "id": 10,
+      "nombre": "Pasta",
+      "precio": 110,
+      "img": "../public/img/imagenes/spaguetti.png"
+    },
+    {
+      "id": 11,
+      "nombre": "Galleta",
+      "precio": 25,
+      "img": "../public/img/imagenes/galletas.png"
+    },
+    {
+      "id": 12,
+      "nombre": "Mouse",
+      "precio": 600,
+      "img": "../public/img/imagenes/clicker-del-mouse.png"
+    },
+    {
+      "id": 13,
+      "nombre": "Manzana",
+      "precio": 55,
+      "img": "../public/img/imagenes/manzana.png"
+    },
+    {
+      "id": 14,
+      "nombre": "Libro",
+      "precio": 300,
+      "img": "../public/img/imagenes/pila-de-libros.png"
+    },
+    {
+      "id": 15,
+      "nombre": "Aguacate",
+      "precio": 70,
+      "img": "../public/img/imagenes/aguacate.png"
+    }
+  ]
+
+
