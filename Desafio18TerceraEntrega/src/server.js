@@ -108,10 +108,7 @@ app.engine('hbs',
 /* Endpoints */
 app.post("/login", passport.authenticate("login", { failureRedirect: "/faillogin" }), routes.postLogin);
 app.post("/signup", passport.authenticate("signup", { failureRedirect: "/failsignup" }), routes.postSignup);
-/* app.post("/signup", (req, res) => {
-  body = req
-  console.log(body);
-}); */
+
 
 app.use("/api/productos", routerProductos);
 app.use("/api/carrito", routerCarrito);
@@ -282,8 +279,6 @@ const normalizarMensajes = async () => {
 const lista = await producto.getAll('productos');
 
 const carrito1 = await carrito.getById('63f237469056899a969e2c51', 'carritos')
-
-/* console.log('carrito:', carrito1.productos); */
 
 
 

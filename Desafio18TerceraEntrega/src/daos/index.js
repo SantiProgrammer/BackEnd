@@ -18,7 +18,6 @@ const instancias = [
 ]
 
 const instancia = instancias.filter(i => i.id == process.env.INSTANCIA);
-// console.log(instancia)
 
 const resultado = {
     [instancia[0].descripcion]: instancia[0].nombre,

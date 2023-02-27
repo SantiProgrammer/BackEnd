@@ -15,9 +15,8 @@ const sendSMS = async (body, num) => {
             from: '+18034714674',
             to: `+52${num}`,
         })
-        /* console.log(message) */
     } catch (error) {
-        /* console.log(error) */
+        wLogger.log('error', ` ${e}`);
     }
 }
 
@@ -28,9 +27,8 @@ const sendWhatsAppMsg = async (body) => {
             from: "whatsapp:+14155238886",
             to: 'whatsapp:+5215512308811'
         });
-        /* console.log(message); */
     } catch (error) {
-        /* console.log(error); */
+        wLogger.log('error', ` ${e}`);
     }
 };
 

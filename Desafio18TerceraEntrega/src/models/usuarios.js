@@ -7,7 +7,10 @@ const UsuarioSchema = new mongoose.Schema({
   direccion: { type: String, required: true, max: 100 },
   edad: { type: Number, required: true, max: 100 },
   telefono: { type: String, required: true, max: 100 },
-  url: { type: String, required: true, max: 100 }
+  url: {
+    type: String,
+    default: "https://www.seekpng.com/png/full/329-3291908_here-are-your-avatars-for-this-school-year.png"
+  }
 });
 
 const Usuarios = mongoose.model("usuarios", UsuarioSchema);

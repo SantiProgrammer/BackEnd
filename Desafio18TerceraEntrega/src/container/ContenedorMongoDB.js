@@ -49,7 +49,6 @@ class ContenedorMongoDB {
       const id = aux[0]._id;
       return id
     } catch {
-      console.log("Se ha producido un error");
       return "Se ha producido un error"
     }
   }
@@ -110,7 +109,6 @@ class ContenedorMongoDB {
       const id = aux[0]._id;
       return id
     } catch {
-      console.log("Se ha producido un error");
       return "Se ha producido un error"
     }
   }

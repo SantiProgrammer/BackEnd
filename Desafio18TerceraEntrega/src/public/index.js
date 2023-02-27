@@ -26,7 +26,6 @@ const socket = io();
 //         },
 //         text: chatInput,
 //     }
-//     console.log(userData);
 //     chatInput.value = "";
 //     socket.emit("msg", userData);
 //     return false;
@@ -73,7 +72,6 @@ function enviarLog() {
 
 // productos Mongo
 // socket.on("products-list", (data) => {
-//     console.log('data productos en socket frot:', data);
 //     data.forEach((producto) => {
 //         const productosWrapper = document.getElementById("productos-wrapper")
 //         let card = document.createElement("div");
