@@ -1,6 +1,6 @@
 import wLogger from "../utils/winston.js";
-import sendEmail from "../services/nodeMailer.js";
-import sendSMS from "../services/twilio.js";
+import sendEmail from "../utils/nodeMailer.js";
+import sendSMS from "../utils/twilio.js";
 
 
 

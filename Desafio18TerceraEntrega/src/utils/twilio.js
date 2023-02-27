@@ -1,8 +1,12 @@
 import twilio from 'twilio'
 import wLogger from "../utils/winston.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
-const accountSid = 'AC7443f3a4f66f3f96ec48059226707608'
-const authToken = '0f96bb5deb0b1cf2d748ca13ea11c104'
+
+
+const accountSid = process.env.ACCOUNT_SID
+const authToken = process.env.AUTH_TOKEN
 
 const client = twilio(accountSid, authToken)
 
@@ -12,7 +16,7 @@ const sendSMS = async (body, num) => {
     try {
         const message = await client.messages.create({
             body: `SMS de twilio: ${body} `,
-            from: '+18034714674',
+            from: process.env.TWILIO_SMS_NUMBER,
             to: `+52${num}`,
         })
     } catch (error) {
@@ -33,4 +37,8 @@ const sendWhatsAppMsg = async (body) => {
 };
 
 
-export default sendSMS
+export default {
+    sendSMS,
+    sendWhatsAppMsg
+
+} 

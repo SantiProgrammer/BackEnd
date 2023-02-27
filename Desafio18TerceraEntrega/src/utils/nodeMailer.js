@@ -1,5 +1,7 @@
 import { createTransport } from 'nodemailer';
 import wLogger from "../utils/winston.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const sendEmail = async (mail, body) => {
 
@@ -10,8 +12,8 @@ const sendEmail = async (mail, body) => {
         service: 'gmail',
         port: 587,
         auth: {
-            user: 'santi.iztli@gmail.com',
-            pass: 'vuzvfiibzikrbmma'
+            user: process.env.NODEMAILER_USER,
+            pass: process.env.NODEMAILER_PASS
         },
         tls: {
             rejectUnauthorized: false

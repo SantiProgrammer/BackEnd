@@ -10,10 +10,11 @@ const httpServer = http.createServer(app);
 import { Server } from "socket.io";
 const io = new Server(httpServer);
 import passport from "passport";
+import { passportInit, checkAuthentication } from './middleware/passportAuth.js';
 import { Strategy as LocalStrategy } from "passport-local";
 import Usuarios from "./models/usuarios.js";
 import bcrypt from "bcrypt";
-import routes from "./routes/routes.js";
+import routesAuth from "./routes/routesAuth.js";
 import routesChat from "./routes/routesChat.js";
 import routesNginx from "./routes/routesNginx.js";
 import mongoConnect from "./services/mongo.js"
@@ -23,7 +24,7 @@ import redis from "redis";
 import generateFakeProducts from "./mocks/fakerProductGenerator.js";
 import moment from "moment";
 import containerFileSystem from "./container/containerFileSystem.js";
-import sendEmail from "./services/nodeMailer.js";
+import sendEmail from "./utils/nodeMailer.js";
 
 
 import instancia from './daos/index.js';
@@ -106,19 +107,20 @@ app.engine('hbs',
   })
 );
 /* Endpoints */
-app.post("/login", passport.authenticate("login", { failureRedirect: "/faillogin" }), routes.postLogin);
-app.post("/signup", passport.authenticate("signup", { failureRedirect: "/failsignup" }), routes.postSignup);
+passportInit();
+app.post("/login", passport.authenticate("login", { failureRedirect: "/faillogin" }), routesAuth.postLogin);
+app.post("/signup", passport.authenticate("signup", { failureRedirect: "/failsignup" }), routesAuth.postSignup);
 
 
 app.use("/api/productos", routerProductos);
 app.use("/api/carrito", routerCarrito);
 
-app.get("/", routes.getRoot);
-app.get("/login", routes.getLogin);
-app.get("/faillogin", routes.getFaillogin);
-app.get("/signup", routes.getSignup);
-app.get("/failsignup", routes.getFailsignup);
-app.get("/logout", routes.getLogout);
+app.get("/", routesAuth.getRoot);
+app.get("/login", routesAuth.getLogin);
+app.get("/faillogin", routesAuth.getFaillogin);
+app.get("/signup", routesAuth.getSignup);
+app.get("/failsignup", routesAuth.getFailsignup);
+app.get("/logout", routesAuth.getLogout);
 app.get('/chat', routesChat.GetChat);
 app.get('/carrito', (req, res) => { res.render('carrito', { layout: 'logged' }); });
 app.get('/info', (req, res) => { res.render('info', { layout: 'logged' }); });
@@ -153,100 +155,9 @@ app.get("/showsession", (req, res) => {
   //res.json(req.session)
   res.render('session', { layout: 'logged', session: mySession })
 });
-app.get("*", routes.failRoute);
-
-/* Passport */
-function isValidPassword(user, password) {
-  return bcrypt.compareSync(password, user.password);
-}
-function createHash(password) {
-  return bcrypt.hashSync(password, bcrypt.genSaltSync(10), null);
-}
-function checkAuthentication(req, res, next) {
-  if (req.isAuthenticated()) {
-    next();
-  } else {
-    res.redirect("/login");
-  }
-}
-passport.serializeUser((user, done) => {
-  done(null, user._id);
-});
-
-passport.deserializeUser((id, done) => {
-  Usuarios.findById(id, done);
-});
-
-passport.use(
-  "login",
-  new LocalStrategy((username, password, done) => {
-    Usuarios.findOne({ username }, (err, user) => {
-      if (err) return done(err);
-
-      if (!user) {
-        wLogger.log('warn', `User Not Found with username ${username}`)
-        return done(null, false);
-      }
-
-      if (!isValidPassword(user, password)) {
-        wLogger.log('warn', `Invalid Password`)
-        return done(null, false);
-      }
-      // no corto por error, ni corto por sin user, paso! ...
-      return done(null, user);
-    });
-  })
-);
-passport.use(
-  "signup",
-  new LocalStrategy(
-    {
-      passReqToCallback: true,
-    },
-    (req, username, password, done) => {
-      Usuarios.findOne({ username: username }, async function (err, user) {
-        if (err) {
-
-          res.render('usuario-registrado');
-          wLogger.log('warn', "❌ Error in SignUp: " + err);
-          return done(err);
-        }
-
-        if (user) {
-          wLogger.log('warn', "User already exists");
-          return done(null, false);
-        }
-
-        const idNumber = await carrito.save({
-          timestamp,
-          productos: [],
-        });
-
-        const newUser = {
-          username: username,
-          password: createHash(password),
-          nombre: req.body.nombre,
-          direccion: req.body.direccion,
-          edad: req.body.edad,
-          telefono: req.body.telefono,
-          url: req.body.url,
-          carrito_id: idNumber,
-        };
-        Usuarios.create(newUser, (err, userWithId) => {
-          if (err) {
-            wLogger.log('warn', "❌ Error in Saving user: " + err);
-            return done(err);
-          }
-          wLogger.log('warn', "User Registration succesful ✅");
-          return done(null, userWithId);
+app.get("*", routesAuth.failRoute);
 
 
-
-        });
-      });
-    }
-  )
-);
 
 
 
