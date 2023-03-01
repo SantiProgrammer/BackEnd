@@ -1,0 +1,24 @@
+<div class="login-box">
+  <form method="post" action="/api/auth/login">
+    <h2>Login</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/8043/8043665.png" class="arrow" alt="" />
+    <input placeholder="Email" name="username" required="true" />
+        <div class="password-row">
+      <input placeholder="Password" name="password" required="true" type="password" id="password" />
+      <button class="btn " type="button" onclick="mostrarContrasena()"><img src="https://cdn-icons-png.flaticon.com/512/6642/6642206.png" alt="eye" class="eye"></button>
+
+    </div>
+    <button class="log-button m-2" type="submit">Login</button>
+  </form>
+</div>
+
+<script>
+  function mostrarContrasena() {
+    var tipo = document.getElementById("password");
+    if (tipo.type == "password") {
+      tipo.type = "text";
+    } else {
+      tipo.type = "password";
+    }
+  }
+</script>

@@ -1,0 +1,49 @@
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/api/auth/public/styles/css/styles.css\"}"}
+{"level":"error","message":"Can not connect to Redis! ❌ ReferenceError: wLogger is not defined"}
+{"level":"error","message":"Can not connect to Redis! ❌ ReferenceError: Logger is not defined"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/stock.json\"}"}
+{"level":"warn","message":"User already exists"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":"error","message":" ❌ DB OFF MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":"Error adding product: ReferenceError: postProductAddService is not defined"}
+{"level":"error","message":"Error adding product: TypeError: Cannot read properties of undefined (reading 'body')"}
+{"level":"error","message":"Error adding product: TypeError: Cannot read properties of undefined (reading 'render')"}
+{"level":"warn","message":"no session to logout:"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"warn","message":"User Not Found with username pedrito@gmail.com"}

@@ -1,0 +1,12 @@
+{"level":"error","message":"Can not connect to Redis! ❌ ReferenceError: wLogger is not defined"}
+{"level":"error","message":"Can not connect to Redis! ❌ ReferenceError: Logger is not defined"}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":"error","message":" ❌ DB OFF MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":"Error adding product: ReferenceError: postProductAddService is not defined"}
+{"level":"error","message":"Error adding product: TypeError: Cannot read properties of undefined (reading 'body')"}
+{"level":"error","message":"Error adding product: TypeError: Cannot read properties of undefined (reading 'render')"}

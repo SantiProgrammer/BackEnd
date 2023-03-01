@@ -1,0 +1,38 @@
+/** Variables **/
+
+/** Font color **/
+$font-color: rgb(255, 255, 255);
+$darkgrey:  #373737;
+$lightshadow: rgba(119, 136, 153,.5);
+$darkfont:#cecece;
+
+// variable colores 
+
+$botonColor: rgba(0, 0, 255, 0.5);
+
+
+$colores:
+#747c58,
+rgb(243, 243, 225),
+rgb(219, 206, 161),
+#a3a59e77,
+#4f69b1,
+#4f69b1,
+#e9e5d5,
+#575253;
+
+
+
+
+// mixins
+
+@mixin ubicacion ($tipo, $fila, $columna, $direction) {
+  display: $tipo;
+  justify-content: $fila;
+  align-items: $columna;
+  flex-direction: $direction;
+}
+
+.disclaimer { 
+  visibility: hidden; 
+}
