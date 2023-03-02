@@ -413,6 +413,8 @@ p {
 
 .productos__card {
   max-width: 1000px;
+  margin: 50px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
