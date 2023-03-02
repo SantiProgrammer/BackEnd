@@ -5,4 +5,4 @@
 Usuario: santi.iztli@gmail.com
 Password: santipass
 
-3.- Productos y carrito dispobible
+3.- Productos y carrito disponible
