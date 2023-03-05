@@ -1,0 +1,31 @@
+<!-- Chat -->
+
+<div class="offcanvas offcanvas-bottom chat-canvas" tabindex="-1" id="offcanvasBottom"
+  aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Chat</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    <div class="chat-container">
+      <h5 id="h5"></h5>
+      <form id="preventDefault-chat" class="chat-form" action="/api/chat/mensaje" method="POST" >
+        <div class="main-user-data">
+          <input type="email" name="email" id="email-id" placeholder="Email Id" required="true">
+          <input type="name" name="name" id="nombre" placeholder="Nombre" required="true">
+          <input type="text" name="lastName" id="apellido" placeholder="Apellido" required="true">
+          <input type="number" name="age" id="edad" placeholder="Edad" required="true">
+          <input type="text" name="alias" id="alias" placeholder="Alias(Tu nombre en el chat)">
+          <input type="text" name="avatar" id="avatar" placeholder="Url Avatar" required="true">
+        <p class="avatarUrl">🟢 Avatar URL de prueba: https://cdn-icons-png.flaticon.com/512/1236/1236123.png</p>
+        </div>
+        <div id="mgs-area" class="chat-area">
+            <div class="input-msg-container">
+          <input type="text" name="message" id="inputMsg" placeholder="Mensaje" required="true">
+          <button class="my-button" type="submit">Enviar</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

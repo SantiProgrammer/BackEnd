@@ -1,0 +1,36 @@
+<div class="signup-box">
+  <form method="post" action="/api/auth/signup">
+    <h2>Sign up</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/6799/6799093.png" class="arrow" alt="" />
+    <input placeholder="Nombre" name="nombre" required="true" />
+    <input placeholder="Telefono ejemplo: 5512308811" name="telefono" required="true" />
+    <input placeholder="Direccion" name="direccion" required="true" />
+    <input placeholder="Avatar url" name="url" required="true" />
+    <input placeholder="Age" name="edad" required="true" />
+    <input placeholder="Email" name="username" required="true" type="email" />
+    <div class="password-row">
+      <input placeholder="Password" name="password" required="true" type="password" id="password" />
+      <button class="btn " type="button" onclick="mostrarContrasena()"><img src="https://cdn-icons-png.flaticon.com/512/6642/6642206.png" alt="eye" class="eye"></button>
+
+    </div>
+    
+
+    
+
+
+
+
+    <button class="log-button m-2" type="submit">Sign up</button>
+  </form>
+</div>
+
+<script>
+  function mostrarContrasena() {
+    var tipo = document.getElementById("password");
+    if (tipo.type == "password") {
+      tipo.type = "text";
+    } else {
+      tipo.type = "password";
+    }
+  }
+</script>
