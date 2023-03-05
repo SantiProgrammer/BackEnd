@@ -14,7 +14,7 @@ git clone https://github.com/santi-iztli/BackEnd.git
 
 ### Pre-requisitos 📋
 
-_Programas necesatios_
+_Programas necesarios_
 
 ```
 Cualquier explorador Chrome, Firefox, Safari ...
