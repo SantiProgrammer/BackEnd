@@ -71,3 +71,38 @@
 {"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
 {"level":"error","message":"❌ Error cant post product data: ValidationError: description: Path `description` is required., price: Path `price` is required., name: Path `name` is required."}
 {"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts..\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts..\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts..\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}

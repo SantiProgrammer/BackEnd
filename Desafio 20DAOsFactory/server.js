@@ -1,5 +1,5 @@
 import compression from 'compression';
-import RedisStore from 'connect-redis';
+
 import dotenv from 'dotenv';
 import express from 'express';
 import { engine } from "express-handlebars";
@@ -7,7 +7,7 @@ import session from "express-session";
 import http from "http";
 import passport from "passport";
 import path from 'path';
-import redis from "redis";
+import { client, RedisStoreSession, redisConnect } from './utils/redis.js';
 import { Server } from "socket.io";
 import { fileURLToPath } from 'url';
 import { passportInit } from './middleware/passportAuth.js';
@@ -24,14 +24,8 @@ const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 8089;
 HttpServer.listen(PORT, () => logger.log("info", `✅ Server ON at => http://localhost:${PORT}`));
 
-const client = redis.createClient({ legacyMode: true, });
-client
-    .connect()
-    .then(() => logger.log('info', "✅ Redis ON"))
-    .catch((e) => {
-        throw logger.log('error', `❌ Can not connect to Redis! ${e}`);
-    });
-const RedisStoreSession = RedisStore(session);
+passportInit();
+redisConnect();
 
 app.use(compression());
 app.use(express.json());
@@ -61,7 +55,6 @@ app.engine('hbs',
     })
 );
 
-passportInit();
 app.use(passport.initialize());
 app.use(passport.session());
 

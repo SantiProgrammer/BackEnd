@@ -1,9 +1,9 @@
 1.- npm i
 
 2.-
-npm run prod
-npm run dev
-npm run file
+a) mongo - npm run prod
+b) memory - npm run dev
+c) file - npm run file
 
 3.- Login:
 

@@ -158,6 +158,7 @@ pagarTotal.addEventListener('click', () => {
 
 const carritoWrapper = document.getElementById("carrito-wrapper")
 const actualizarCarrito = () => {
+  console.log('Carrito:', carrito);
   carritoWrapper.innerHTML = "";
   if (carrito.length === 0) {
     let aviso = document.createElement("div");
