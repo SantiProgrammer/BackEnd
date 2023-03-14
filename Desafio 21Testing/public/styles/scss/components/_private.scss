@@ -1,0 +1,11 @@
+.green {
+    color: #32d932;
+}
+
+
+.success-box {
+    display: grid;
+    place-items: center;
+
+    animation: fadeInUp 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

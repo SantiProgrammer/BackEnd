@@ -1,0 +1,128 @@
+.chat-link {
+    width: 30px;
+    margin-left: 10px;
+    transition: 0.1s all ease-out;
+
+}
+
+
+.chat-link-box {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Chat */
+
+.chat-canvas {
+    background-color: #c4c4c448;
+    backdrop-filter: blur(10px);
+    color: rgba(229, 229, 229, 0.9);
+    border-radius: 15px;
+    margin: 15px;
+    height: 450px !important;
+    max-width: 80%;
+
+
+}
+
+.input-msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.chat-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    background-color: #ffffff00;
+    box-shadow: none;
+    padding: 0px;
+    margin: 0px;
+}
+.send-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: none;
+
+    }
+}
+
+
+.send-icon{
+    width: 30px;
+    transform: rotate(90deg);
+    transition: all ease .2s;
+
+    &:hover{
+        /* width: 35px; */
+    }
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeInUp .5s;
+
+}
+
+
+
+.chat-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+    box-shadow: rgb(0 0 0 / 18%) 0px 2px 4px;
+}
+
+.avatar {
+    width: 30px;
+    border-radius: 50px;
+}
+
+.avatarUrl {
+    font-size: 10px;
+}
+
+.p-email {
+    color: #666666;
+    margin: 1px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.p-email span {
+    color: black;
+}
+
+.msj-container {
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    max-width: max-content;
+    display: flex;
+    flex-direction: row;
+}
+
+;

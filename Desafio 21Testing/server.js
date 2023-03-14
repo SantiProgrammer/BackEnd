@@ -13,6 +13,8 @@ import { fileURLToPath } from 'url';
 import { passportInit } from './middleware/passportAuth.js';
 import { authRouter, chatRouter, defaultRouter, productRouter, userRouter } from './routers/router.js';
 import logger from "./utils/winston.js";
+import cors from "cors";
+import { socketStart } from './utils/socket.js';
 dotenv.config();
 const app = express();
 
@@ -26,7 +28,9 @@ HttpServer.listen(PORT, () => logger.log("info", `✅ Server ON at => http://loc
 
 passportInit();
 redisConnect();
+/* socketStart(io); */
 
+app.use(cors());
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -65,4 +69,18 @@ app.use('/api/product', productRouter);
 app.use('/api/chat', chatRouter);
 
 
-/*  */
+// io.on("connection", async (socket) => {
+//     try {
+//         console.log(`Nuevo cliente conectado ${socket.id}`);
+//        /*  socket.emit("messagesHistory", await DAO.getMessagesData() ) */
+
+//         socket.on("newMessageData", async (data) => {
+//             console.log("newMessageData:", data);
+//             /* await DAO.postMessageData(data) */
+//         })
+
+//     } catch (e) {
+//         loggers.log("error",`❌ Error socket: ${e}` )
+        
+//     }
+// });

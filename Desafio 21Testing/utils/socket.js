@@ -1,15 +1,22 @@
 /* Socket */
 
+import { loggers } from "winston";
+import { DAO } from "../DAOs/DAOsFactory.js";
+
 
 export const socketStart = (io) => {
 
     io.on("connection", async (socket) => {
         try {
+           /*  socket.emit("messagesHistory", await DAO.getMessagesData() ) */
 
-            /* Aqui me quede */
+            socket.on("newMessageData", async (data) => {
+                console.log("newMessageData:", data);
+                /* await DAO.postMessageData(data) */
+            })
 
-            
         } catch (e) {
+            loggers.log("error",`❌ Error socket: ${e}` )
             
         }
     })
@@ -17,7 +24,7 @@ export const socketStart = (io) => {
 }
 
 
-io.on("connection", async (socket) => {
+/* io.on("connection", async (socket) => {
     try {
         socket.emit("products-list", await productosFS);
         socket.emit("productos-test", await FakeP)
@@ -35,4 +42,4 @@ io.on("connection", async (socket) => {
     } catch (e) {
         wLogger.log('error', e)
     }
-});
+}); */

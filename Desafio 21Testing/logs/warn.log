@@ -1,0 +1,119 @@
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/api/auth/public/styles/css/styles.css\"}"}
+{"level":"error","message":"Can not connect to Redis! ❌ ReferenceError: wLogger is not defined"}
+{"level":"error","message":"Can not connect to Redis! ❌ ReferenceError: Logger is not defined"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/public/styles/css/styles.css\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/\"}"}
+{"level":"warn","message":"Route entered by the client: {\"0\":\"/stock.json\"}"}
+{"level":"warn","message":"User already exists"}
+{"level":"warn","message":"User Registration succesful ✅"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":" ❌ DB OFF MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":"error","message":" ❌ DB OFF MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":"error","message":" ❌ DB OFF MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string."}
+{"level":"error","message":"Error adding product: ReferenceError: postProductService is not defined"}
+{"level":"error","message":"Error adding product: TypeError: Cannot read properties of undefined (reading 'body')"}
+{"level":"error","message":"Error adding product: TypeError: Cannot read properties of undefined (reading 'render')"}
+{"level":"warn","message":"no session to logout:"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"warn","message":"User Not Found with username ana@gmail.com"}
+{"level":"warn","message":"User Not Found with username pedrito@gmail.com"}
+{"level":"error","message":" ❌ DB OFF MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\""}
+{"level":"warn","message":"✅ User registration succesful"}
+{"level":"warn","message":"⚠️ User Not Found with username thisissanti.dev@gmail.com"}
+{"level":"error","message":"❌ Error cant get stock controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant get stock controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant get stock controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant get stock controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant get product controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant post message controller: ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant post message controller: ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant post message controller: ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant get product controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant get product controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant get product controller ReferenceError: logger is not defined"}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant post product data: ValidationError: description: Path `description` is required., price: Path `price` is required., name: Path `name` is required."}
+{"level":"error","message":"❌ Error cant post message data : TypeError: DAO.postMessageData is not a function"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: ReferenceError: productos is not defined"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts..\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts..\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\data\\productStock.json'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts..\\FILENAME'"}
+{"level":"error","message":"❌ Error cant get product data: Error: ENOENT: no such file or directory, open 'C:\\Users\\santi\\OneDrive\\Escritorio\\Backend\\Desafios\\Desafio 20DAOsFactory\\DAOs\\DAOproducts\\FILENAME'"}
+{"level":"error","message":"❌ Error cant post product data: ValidationError: description: Path `description` is required., price: Path `price` is required., name: Path `name` is required."}
+{"level":"error","message":"❌ Error cant delete product data: TypeError: Product.deleteById is not a function"}
+{"level":"error","message":"❌ Error cant delete product data: TypeError: Product.deleteById is not a function"}
+{"level":"error","message":"❌ Error cant delete product data: TypeError: Product.deleteById is not a function"}
+{"level":"error","message":"❌ Error cant delete product data: ReferenceError: AxiosProduct is not defined"}
+{"level":"error","message":"❌ Error cant post product data: ValidationError: descripcion: Path `descripcion` is required., nombre: Path `nombre` is required."}
+{"level":"error","message":"❌ Error cant post product data: ValidationError: descripcion: Path `descripcion` is required., nombre: Path `nombre` is required."}
+{"level":"error","message":"❌ Error cant post product data: ValidationError: descripcion: Path `descripcion` is required., nombre: Path `nombre` is required."}
+{"level":"error","message":"❌ Error cant post product data: ValidationError: descripcion: Path `descripcion` is required., nombre: Path `nombre` is required."}
+{"level":"warn","message":"⚠️ Route entered by the client: {\"0\":\"/Axios image\"}"}
+{"level":"warn","message":"⚠️ Route entered by the client: {\"0\":\"/Axios image\"}"}

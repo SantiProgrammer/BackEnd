@@ -1,0 +1,37 @@
+<nav>
+  <div class="navbar-column">
+    {{!-- <div class="theme-switch">
+          {{> themeSwitch}
+    </div> --}}
+  </div>
+  <div class="navbar-column">
+    <a href="/api/product/list" title="Catalogo">Catalogo</a>
+    <a href="/api/product/post" title="Agregar productos">Agregar productos</a>
+    {{!-- <a href="./products-list">Productos</a> --}}
+    {{!-- <a href="./form">Agregar productos</a>
+    <a href="./productos-test">Faker</a>
+    
+    <a href="./info">🆕Info</a>
+    <a href="/showsession">Show Session</a> --}}
+  </div>
+  <div class="navbar-column">
+      {{!-- <a href="/api/chat/chat" title="Chat"><img class="chat-link" src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt=""></a> --}}
+      <a href="/api/user/profile" title="User profile"><img src="https://cdn-icons-png.flaticon.com/512/9654/9654233.png" class="cart"
+        alt="user-profile">
+      </a>
+          <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" class="cart" alt="chat-icon" />
+    </button>
+
+      
+    <div class="carrito" title="Carrito">
+      <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <img src="https://cdn-icons-png.flaticon.com/512/3649/3649775.png" class="cart" alt="" />
+        <span id="productosCounter">0</span>
+      </button>
+    </div>
+    <a href="/api/auth/logout " class="log-button" title="Logout">Logout</a>
+  </div>
+  {{> carrito}}
+  {{> chat}}
+</nav>

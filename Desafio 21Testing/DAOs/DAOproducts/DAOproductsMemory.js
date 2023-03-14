@@ -1,0 +1,162 @@
+import logger from '../../utils/winston.js';
+
+let products = [
+    {
+        _id: 0,
+        nombre: "Array memory",
+        precio: 1,
+        descripcion: "from products array",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/3898/3898186.png",
+        stock: 1
+    },
+    {
+        _id: 1,
+        nombre: "Leche",
+        precio: 20,
+        descripcion: "Leche fria como hielo",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/372/372973.png",
+        stock: 10
+    },
+    {
+        id: 2,
+        nombre: "Harina",
+        precio: 15,
+        descripcion: "Harina integral",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/527/527709.png",
+        stock: 10
+    },
+    {
+        id: 3,
+        nombre: "Huevo",
+        precio: 70,
+        descripcion: "Huevo fresco",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/2870/2870896.png",
+        stock: 10
+    },
+    {
+        id: 4,
+        nombre: "Cereal",
+        precio: 80,
+        descripcion: "Cereal de frutas",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/859/859291.png",
+        stock: 10
+    },
+    {
+        id: 5,
+        nombre: "Avena",
+        precio: 10,
+        descripcion: "Ojuelas de avena",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/3982/3982824.png",
+        stock: 10
+    },
+    {
+        id: 6,
+        nombre: "Cafe",
+        precio: 150,
+        descripcion: "Cafe tostado medio",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/5847/5847393.png",
+        stock: 10
+    },
+    {
+        id: 7,
+        nombre: "Hielo",
+        precio: 50,
+        descripcion: "Cubos de hielo",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/4051/4051545.png",
+        stock: 10
+    },
+    {
+        id: 8,
+        nombre: "Chocolate",
+        precio: 30,
+        descripcion: "Chocolate con leche",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/9408/9408998.png",
+        stock: 10
+    },
+    {
+        id: 9,
+        nombre: "CupCake",
+        precio: 290,
+        descripcion: "Cupcake red velvet",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/6939/6939870.png",
+        stock: 10
+    },
+    {
+        id: 10,
+        nombre: "Pasta",
+        precio: 110,
+        descripcion: "Pasta de trigo",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/9126/9126280.png",
+        stock: 10
+    },
+    {
+        id: 11,
+        nombre: "Galleta",
+        precio: 25,
+        descripcion: "Galletas con chispas",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/808/808885.png",
+        stock: 10
+    },
+    {
+        id: 12,
+        nombre: "Mouse",
+        precio: 600,
+        descripcion: "Mouse bluetooth",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/8033/8033957.png",
+        stock: 10
+    },
+    {
+        id: 13,
+        nombre: "Manzana",
+        precio: 55,
+        descripcion: "Manzana verde",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/1791/1791336.png",
+        stock: 10
+    },
+    {
+        id: 14,
+        nombre: "Libro",
+        precio: 300,
+        descripcion: "Libro de programación",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/867/867861.png",
+        stock: 10
+    },
+    {
+        id: 15,
+        nombre: "Aguacate",
+        precio: 70,
+        descripcion: "Aguacate hass",
+        thumbnail: "https://cdn-icons-png.flaticon.com/512/2060/2060578.png",
+        stock: 10
+    }
+]
+
+export class DAOproductsMemory {
+
+    getProductData = async () => {
+        try {
+            return products
+        } catch (e) {
+            logger.log('error', `❌ Error cant get products data: ${e}`);
+        }
+    };
+
+    postProductData = async (data) => {
+        try {
+            return products.push(data)
+        } catch (e) {
+            logger.log('error', `❌ Error cant post product data: ${e}`);
+        }
+    };
+
+}
+
+
+
+
+
+
+
+
+
+

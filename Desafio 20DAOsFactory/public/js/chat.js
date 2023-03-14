@@ -1,5 +1,4 @@
 /* Socket.io */
-import { messages } from "../../DAOs/DAOmessages/DAOmessagesMemory";
 
 const socket = io();
 

@@ -1,0 +1,14 @@
+/* ProductosAdd */
+
+.productAdd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeInUp .5s;
+
+
+    @media screen and (min-width: 990px) {
+        flex-direction: row;
+    }
+}

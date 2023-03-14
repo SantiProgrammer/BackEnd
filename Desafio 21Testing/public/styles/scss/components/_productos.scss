@@ -1,0 +1,205 @@
+/* products */
+
+.catalogo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productList-wrapper {
+    animation: fadeInUp .5s;
+
+}
+
+.products-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.44);
+
+
+    .products-card-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        form {
+            padding: 0;
+            margin: 0;
+        }
+
+        .agregar {
+            background-color: cadetblue;
+
+        }
+    }
+
+
+
+}
+
+.product-img {
+    width: 190px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+;
+
+/** Tienda **/
+
+.list-group-item {
+    transition: .5s all ease;
+}
+
+.tit-productos {
+    max-width: 1140px;
+    margin: auto;
+
+    h2 {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 0.5em 0em;
+        border-bottom: 1px solid gray;
+        margin: 1em
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+.categoria-productos {
+    margin: 2em 2em 0em 2em;
+    padding: 0.5em 2em;
+    background-color: nth($colores, 7);
+    color: nth($colores, 6);
+    border-radius: 20px;
+    text-align: start;
+
+    @media screen and (max-width: 575px) {
+        text-align: center;
+        margin: 0em;
+        font-size: 20px;
+    }
+}
+
+.productos__card {
+    max-width: 1000px;
+    margin: 50px;
+    margin-top: 10px;
+    @include ubicacion(flex, center, center, row);
+    flex-wrap: wrap;
+
+    div {
+        width: 200px;
+
+        .card {
+            @include ubicacion(flex, center, center, column);
+            padding-bottom: 1em;
+            background-color: rgba(240, 248, 255, 0.363);
+            color: black;
+            font-weight: bolder;
+            padding: 10px;
+
+            img {
+                width: 70px;
+                padding-bottom: 1em;
+
+            }
+
+            .card-text {
+                color: black;
+                text-align: center
+            }
+
+            .card-description {
+                color: rgb(39, 39, 39);
+                font-size: 13px;
+                text-align: center
+            }
+
+            .btn {
+                @extend %boton;
+            }
+        }
+    }
+}
+
+
+
+
+.btn {
+    font-size: 12px;
+}
+
+%boton {
+    background-color: $botonColor;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    transition: all .2s;
+
+    &:hover {
+        color: white;
+        transform: scale(1.05);
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+.card-title {
+    body.dark & {
+        color: white;
+    }
+}
+
+.productos__card div .card .card-text {
+    body.dark & {
+        color: white;
+    }
+}
+
+
+.productos__card div .card .btn:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.productos__card div .card .btn {
+    body.dark & {
+        background-color: #302b63;
+        color: white;
+    }
+}
+
+.swal2-popup {
+    background-color: $darkgrey !important;
+    color: rgb(187, 187, 187) !important;
+
+}
+
+
+/* ------------------------------ fin tienda ----------------------------- */

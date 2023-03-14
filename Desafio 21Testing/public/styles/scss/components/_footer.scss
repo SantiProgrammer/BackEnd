@@ -1,0 +1,25 @@
+/* footer */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.footer a,
+a:visited {
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+}

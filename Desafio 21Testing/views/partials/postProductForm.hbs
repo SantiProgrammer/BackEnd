@@ -1,0 +1,11 @@
+<div class="form-box">
+  <h2>Agrega un producto</h2>
+  <form id="preventDefault" action="/api/product/post" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required="true" />
+    <input type="number" name="precio" placeholder="Precio" required="true" />
+    <input type="text" name="thumbnail" placeholder="URL de thumbnail" required="true" />
+    <input type="text" name="descripcion" placeholder="Descripcion" required="true" />
+    <input type="number" name="stock" placeholder="Stock" required="false" />
+    <button class="log-button" type="submit" value="Agregar">Agregar</button>
+  </form>
+</div>
