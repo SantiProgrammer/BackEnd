@@ -1,0 +1,52 @@
+query todos {
+  getProducts{
+    id
+    nombre
+    precio
+    descripcion
+    thumbnail
+    stock
+  }
+}
+
+mutation crearManzana{
+  createProduct(
+    datos:{
+      nombre: "Manzana",
+      precio: "60",
+      thumbnail: "URL",
+      descripcion:"Manzana roja",
+      stock: "10"
+    }
+  ) 
+  {
+    id
+  }
+}
+
+mutation crearPera{
+  createProduct(
+    datos:{
+      nombre: "Pera",
+      precio: "75",
+      thumbnail: "URL",
+      descripcion:"Pera verde",
+      stock: "15"
+    }
+  ) 
+  {
+    id
+  }
+}
+
+mutation update{
+  updateProduct(id: "cf43e2517a4ee1008c5f",datos:{nombre: "ManzanaVerde", descripcion:"Manzana verde", stock:"20"}) {
+    id
+  }
+}
+
+mutation delete{
+  deleteProduct(id: "cf43e2517a4ee1008c5f") {
+    id
+  }
+}
