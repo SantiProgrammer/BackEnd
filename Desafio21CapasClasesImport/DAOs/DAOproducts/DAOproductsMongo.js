@@ -11,6 +11,14 @@ export class DAOproductsMongo {
         }
     };
 
+    getProductByIdData = async (id) => {
+        try {
+            return await Product.findOne({ _id: ObjectId(id) });
+        } catch (e) {
+            logger.log('error', `❌ Error cant get product data with id ${id}: ${e}`);
+        }
+    };
+
     postProductData = async (data) => {
         try {
             await Product.create(data)
@@ -30,7 +38,7 @@ export class DAOproductsMongo {
 
     deleteProductData = async (id) => {
         try {
-            await Product.deleteOne({nombre: AxiosProduct})
+            await Product.deleteOne({ nombre: AxiosProduct })
         } catch (e) {
             logger.log('error', `❌ Error cant delete product data: ${e}`);
         }

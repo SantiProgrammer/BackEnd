@@ -9,7 +9,72 @@
          "alias": "Santi",
          "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
       },
-      "text":"Hola esto es un chat con websocket.io",
+      "text": "Hola esto es un chat con websocket.io",
       "id": 1
+   },
+   {
+      "author": {
+         "email": "santi.iztli@gmail.com",
+         "nombre": "Santiago",
+         "apellido": "Morera Rodríguez",
+         "edad": "30",
+         "alias": "Don Santiago",
+         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
+      },
+      "text": "Hola",
+      "timestamp": "9:25 pm",
+      "id": 2
+   },
+   {
+      "author": {
+         "email": "santi.iztli@gmail.com",
+         "nombre": "Santiago",
+         "apellido": "Morera Rodríguez",
+         "edad": "30",
+         "alias": "Don Santiago",
+         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
+      },
+      "text": "Hola",
+      "timestamp": "9:25 pm",
+      "id": 3
+   },
+   {
+      "author": {
+         "email": "santi.iztli@gmail.com",
+         "nombre": "Santiago",
+         "apellido": "Morera Rodríguez",
+         "edad": "30",
+         "alias": "Don Santiago",
+         "avatar": "https://cdn-icons-png.flaticon.com/512/1236/1236123.png"
+      },
+      "text": "Hola",
+      "timestamp": "9:25 pm",
+      "id": 4
+   },
+   {
+      "author": {
+         "email": "otro@otro.com",
+         "nombre": "otro",
+         "apellido": "otro ",
+         "edad": "31",
+         "alias": "otro",
+         "avatar": "otro"
+      },
+      "text": "otro",
+      "timestamp": "9:25 pm",
+      "id": 5
+   },
+   {
+      "author": {
+         "email": "otro@otro.com",
+         "nombre": "otro",
+         "apellido": "otro ",
+         "edad": "31",
+         "alias": "otro",
+         "avatar": "otro"
+      },
+      "text": "otro",
+      "timestamp": "9:25 pm",
+      "id": 6
    }
 ]
