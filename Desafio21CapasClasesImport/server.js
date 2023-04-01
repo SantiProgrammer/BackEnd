@@ -1,12 +1,12 @@
 import compression from "compression";
+import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import { engine } from "express-handlebars";
 import session from "express-session";
-import http from "http";
 import passport from "passport";
+import http from "http";
 import path from "path";
-import { client, RedisStoreSession, redisConnect } from "./utils/redis.js";
 import { Server } from "socket.io";
 import { fileURLToPath } from "url";
 import { passportInit } from "./middleware/passportAuth.js";
@@ -15,24 +15,23 @@ import {
   chatRouter,
   defaultRouter,
   productRouter,
-  userRouter,
+  userRouter
 } from "./routers/router.js";
+import { client, redisConnect, RedisStoreSession } from "./utils/redis.js";
 import logger from "./utils/winston.js";
-import cors from "cors";
-import { socketStart } from "./utils/socket.js";
 dotenv.config();
 const app = express();
 
-import { Server as HttpServer } from 'http';
+const server = http.createServer(app)
+const io = new Server(server);
 
-// const HttpServer = http.createServer(app);
-// const io = new Server(HttpServer);
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 passportInit();
 redisConnect();
-/* socketStart(io); */
+startSockets()
 
 export class mainServer {
   constructor() {
@@ -85,7 +84,17 @@ export class mainServer {
   }
 
   startSockets() {
-    /* socket aqui */
+    io.on('connection', (socket) => {
+
+      socket.on('chat message', (msg) => {
+        io.emit('chat message', msg);
+      });
+      console.log('a user connected');
+      socket.on('disconnect', () => {
+        console.log('user disconnected');
+      });
+    });
+
   }
 
   templatingEngine() {
@@ -101,11 +110,11 @@ export class mainServer {
         partialsDir: __dirname + "/views/partials",
       })
     );
-    
+
   }
 
   listen() {
-    this.httpServer.listen(this.PORT, () =>
+    server.listen(this.PORT, () =>
       logger.log("info", `✅ Server ON at => http://localhost:${this.PORT}`)
     );
   }
